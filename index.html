@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimal Color Changing Background</title>
+    <!-- Tailwind CSS CDN (still included for potential future use or if any default body styles are pulled) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles for smooth background transition */
+        body {
+            transition: background-color 0.1s ease-out; /* Smooth transition for background color */
+            min-height: 100vh; /* Ensure body takes full viewport height */
+            margin: 0; /* Remove default body margin */
+            overflow: hidden; /* Prevent scrollbars if not needed */
+        }
+    </style>
+</head>
+<body class="bg-gray-900">
+
+    <script>
+        // JavaScript for background color animation based on cursor position
+        document.body.addEventListener('mousemove', (e) => {
+            // Get mouse X and Y coordinates relative to the viewport
+            const mouseX = e.clientX;
+            const mouseY = e.clientY;
+
+            // Get the width and height of the viewport
+            const viewportWidth = window.innerWidth;
+            const viewportHeight = window.innerHeight;
+
+            // Map mouseX to a red component (0-255)
+            // As mouseX moves from left to right, red increases
+            const red = Math.floor((mouseX / viewportWidth) * 255);
+
+            // Map mouseY to a green component (0-255)
+            // As mouseY moves from top to bottom, green increases
+            const green = Math.floor((mouseY / viewportHeight) * 255);
+
+            // Use a fixed or combined value for blue, or map it to something else
+            // Here, we'll make blue inversely proportional to the average of red and green for variety
+            const blue = Math.floor(255 - ((red + green) / 2));
+
+            // Set the background color of the body
+            document.body.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
+        });
+    </script>
+</body>
+</html>
