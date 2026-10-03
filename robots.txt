@@ -1,0 +1,17 @@
+# Search engines and AI crawlers are welcome. To opt out of a crawler, uncomment its block.
+User-agent: *
+Allow: /
+
+# User-agent: GPTBot
+# Disallow: /
+
+# User-agent: ClaudeBot
+# Disallow: /
+
+# User-agent: Google-Extended
+# Disallow: /
+
+# User-agent: CCBot
+# Disallow: /
+
+Sitemap: https://reivajar.github.io/sitemap.xml

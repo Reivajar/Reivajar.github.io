@@ -1,49 +1,584 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minimal Color Changing Background</title>
-    <!-- Tailwind CSS CDN (still included for potential future use or if any default body styles are pulled) -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        /* Custom styles for smooth background transition */
-        body {
-            transition: background-color 0.1s ease-out; /* Smooth transition for background color */
-            min-height: 100vh; /* Ensure body takes full viewport height */
-            margin: 0; /* Remove default body margin */
-            overflow: hidden; /* Prevent scrollbars if not needed */
-        }
-    </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Javier Argota Sánchez-Vaquerizo</title>
+<meta name="description" content="Urban digital twins, participatory AI and human perception of the built environment. Research by Javier Argota Sánchez-Vaquerizo, ETH Zurich.">
+<meta name="color-scheme" content="light dark">
+<meta name="author" content="Javier Argota Sánchez-Vaquerizo">
+<link rel="canonical" href="https://reivajar.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Javier Argota Sánchez-Vaquerizo">
+<meta property="og:description" content="Urban digital twins, participatory AI and human perception of the built environment.">
+<meta property="og:url" content="https://reivajar.github.io/">
+<meta name="twitter:card" content="summary">
+
+<link rel="stylesheet" href="styles.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Javier Argota Sánchez-Vaquerizo",
+  "jobTitle": "Senior Researcher",
+  "url": "https://reivajar.github.io/",
+  "affiliation": {"@type": "Organization", "name": "ETH Zurich"},
+  "sameAs": [
+    "https://orcid.org/0000-0001-9389-6616",
+    "http://scholar.google.com/citations?user=OVTnYkgAAAAJ",
+    "http://www.linkedin.com/in/javierargota"
+  ]
+}
+</script>
 </head>
-<body class="bg-gray-900">
+<body>
+<a class="skip" href="#main">Skip to content</a>
 
-    <script>
-        // JavaScript for background color animation based on cursor position
-        document.body.addEventListener('mousemove', (e) => {
-            // Get mouse X and Y coordinates relative to the viewport
-            const mouseX = e.clientX;
-            const mouseY = e.clientY;
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="#top">Javier Argota Sánchez-Vaquerizo</a>
+    <nav aria-label="Primary">
+      <a href="#research">Research</a>
+      <a href="#projects">Projects</a>
+      <a href="#publications">Publications</a>
+      <a href="#teaching">Teaching</a>
+      <a href="#cv">CV</a>
+    </nav>
+  </div>
+</header>
 
-            // Get the width and height of the viewport
-            const viewportWidth = window.innerWidth;
-            const viewportHeight = window.innerHeight;
+<main id="main">
 
-            // Map mouseX to a red component (0-255)
-            // As mouseX moves from left to right, red increases
-            const red = Math.floor((mouseX / viewportWidth) * 255);
+<!-- HERO: asymmetric split. Left: message. Right: every publication as a clickable dot (real data). -->
+<section class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div class="hero-text">
+      <h1>Simulating urban complexity for city co-creation.</h1>
+      <p class="lede">Architect and urban scientist at ETH Zurich. Computational modelling, digital twins and human perception in the built environment.</p>
+      <p class="actions">
+        <a class="btn btn-primary" href="#publications">Publications</a>
+        <a class="btn btn-secondary" href="assets/Argota_CV.pdf">CV (PDF)</a>
+      </p>
+    </div>
+    <figure class="hero-fig">
+      <div class="chart-tools"><div class="seg" role="group" aria-label="Group marks by"><button type="button" class="seg-btn" data-mode="type" aria-pressed="true">By type</button><button type="button" class="seg-btn" data-mode="topic" aria-pressed="false">By topic</button></div></div>
+<svg viewBox="0 0 720 396" role="group" aria-label="Every publication as a mark, by year and type" class="dots" data-mode="type">
+<line class="lane" x1="102" y1="16" x2="716" y2="16"/>
+<text class="lane-label" x="0" y="38">Journal</text>
+<line class="lane" x1="102" y1="86" x2="716" y2="86"/>
+<text class="lane-label" x="0" y="108">Conference</text>
+<line class="lane" x1="102" y1="156" x2="716" y2="156"/>
+<text class="lane-label" x="0" y="178">Preprint</text>
+<line class="lane" x1="102" y1="226" x2="716" y2="226"/>
+<text class="lane-label" x="0" y="248">Book, chapter</text>
+<line class="lane" x1="102" y1="296" x2="716" y2="296"/>
+<text class="lane-label" x="0" y="318">Thesis, software, other</text>
+<text class="tick" x="195.1" y="390" text-anchor="middle">2011</text>
+<text class="tick" x="294.7" y="390" text-anchor="middle">2014</text>
+<text class="tick" x="394.4" y="390" text-anchor="middle">2017</text>
+<text class="tick" x="494.1" y="390" text-anchor="middle">2020</text>
+<text class="tick" x="593.7" y="390" text-anchor="middle">2023</text>
+<a href="#pub15" class="mark" data-id="pub15" aria-label="Autonomy and Automation in the Architectural Project: the Algorithm of the Hypermobile Commuters City"><circle class="shape" cx="427.6" cy="38.0" r="5.2"/></a>
+<a href="#pub13" class="mark sel" data-id="pub13" aria-label="Participatory resilience: Surviving, recovering and improving together"><circle class="shape" cx="553.0" cy="38.0" r="7.4"/></a>
+<a href="#pub14" class="mark sel" data-id="pub14" aria-label="Getting Real: The Challenge of Building and Validating a Large-Scale Digital Twin of Barcelona&#x27;s Traffic with Empirical Data"><circle class="shape" cx="568.0" cy="38.0" r="7.4"/></a>
+<a href="#pub11" class="mark" data-id="pub11" aria-label="Less can be more: Pruning street networks for sustainable city-making"><circle class="shape" cx="586.2" cy="38.0" r="5.2"/></a>
+<a href="#pub12" class="mark" data-id="pub12" aria-label="Democracy by Design: Perspectives for Digitally Assisted, Participatory Upgrades of Society"><circle class="shape" cx="601.2" cy="38.0" r="5.2"/></a>
+<a href="#pub08" class="mark sel" data-id="pub08" aria-label="Global comparison of urban bike-sharing accessibility across 40 cities"><circle class="shape" cx="619.4" cy="38.0" r="7.4"/></a>
+<a href="#pub09" class="mark" data-id="pub09" aria-label="Cooperative adaptable lanes for safer shared space and improved mixed-traffic flow"><circle class="shape" cx="634.4" cy="38.0" r="5.2"/></a>
+<a href="#pub10" class="mark sel" data-id="pub10" aria-label="A virtual reality experiment to study pedestrian perception of future street scenarios"><circle class="shape" cx="626.9" cy="54.0" r="7.4"/></a>
+<a href="#pub05" class="mark" data-id="pub05" aria-label="Spatial econometrics to estimate the traffic reduction by transforming office space into housing: The case for Barcelona"><circle class="shape" cx="652.7" cy="38.0" r="5.2"/></a>
+<a href="#pub06" class="mark sel" data-id="pub06" aria-label="Urban digital twins and metaverses towards city multiplicities: Uniting or dividing urban experiences?"><circle class="shape" cx="667.7" cy="38.0" r="7.4"/></a>
+<a href="#pub07" class="mark" data-id="pub07" aria-label="FAIRLANE: A multi-agent approach to priority lane management in diverse traffic composition"><circle class="shape" cx="660.2" cy="54.0" r="5.2"/></a>
+<a href="#pub01" class="mark" data-id="pub01" aria-label="Treespotting AR (TSAR): Re-Enchanting Minimal Phygital Ecologies"><circle class="shape" cx="685.9" cy="38.0" r="5.2"/></a>
+<a href="#pub02" class="mark" data-id="pub02" aria-label="Semantic urban elements: A Design+Science paradigm to augment human-centric cities?"><circle class="shape" cx="700.9" cy="38.0" r="5.2"/></a>
+<a href="#pub03" class="mark" data-id="pub03" aria-label="A replica for our democracies?"><circle class="shape" cx="685.9" cy="54.0" r="5.2"/></a>
+<a href="#pub04" class="mark" data-id="pub04" aria-label="Not your mean green: beyond averages in mapping socio-spatial inequities in urban greenery for smart cities"><circle class="shape" cx="700.9" cy="54.0" r="5.2"/></a>
+<a href="#pub20" class="mark" data-id="pub20" aria-label="An ecology of conflicts"><rect class="shape" x="448.7" y="103.3" width="9.4" height="9.4"/></a>
+<a href="#pub21" class="mark" data-id="pub21" aria-label="The social life of small urban spaces 2.0"><rect class="shape" x="463.7" y="103.3" width="9.4" height="9.4"/></a>
+<a href="#pub19" class="mark" data-id="pub19" aria-label="Transhistorical urban landscape as hypermap"><rect class="shape" x="589.0" y="103.3" width="9.4" height="9.4"/></a>
+<a href="#pub18" class="mark" data-id="pub18" aria-label="Democratizing urban mobility through an open-source, multi-criteria route recommendation system"><rect class="shape" x="622.3" y="103.3" width="9.4" height="9.4"/></a>
+<a href="#pub16" class="mark" data-id="pub16" aria-label="In The Eyes Of: An Offline-First System for Geolocalized Expert Narration in Heritage Interpretation"><rect class="shape" x="681.2" y="103.3" width="9.4" height="9.4"/></a>
+<a href="#pub17" class="mark" data-id="pub17" aria-label="OGD4All: A framework for accessible interaction with geospatial open government data based on large language models"><rect class="shape" x="696.2" y="103.3" width="9.4" height="9.4"/></a>
+<a href="#pub37" class="mark" data-id="pub37" aria-label="Fake Plastic Voters: When Political Parties Can Use AI-Simulated Focus Groups"><circle class="shape ring" cx="685.9" cy="178.0" r="4.6"/></a>
+<a href="#pub38" class="mark" data-id="pub38" aria-label="Co-Evolving City Life (CoCi): A System Architecture Proposal for Participatory Smart Cities"><circle class="shape ring" cx="700.9" cy="178.0" r="4.6"/></a>
+<a href="#pub39" class="mark" data-id="pub39" aria-label="Beyond the Townhall: Spatial Anchoring and LLM Agents for Scalable Participatory Urban Planning"><circle class="shape ring" cx="685.9" cy="194.0" r="4.6"/></a>
+<a href="#pub40" class="mark" data-id="pub40" aria-label="From Particles to Agents: Hallucination as a Metric for Cognitive Friction in Spatial Simulation"><circle class="shape ring" cx="700.9" cy="194.0" r="4.6"/></a>
+<a href="#pub41" class="mark" data-id="pub41" aria-label="Routify.ch: An Open-Source Framework for Pluralistic Urban Routing"><circle class="shape ring" cx="693.4" cy="210.0" r="4.6"/></a>
+<a href="#pub30" class="mark" data-id="pub30" aria-label="Programación de Ecosistemas Virtuales como laboratorio de negociación: Protoz00p (Programming virtual ecosystems as a negotiation lab)"><polygon class="shape" points="128.6,242.0 134.3,252.4 122.9,252.4"/></a>
+<a href="#pub34" class="mark" data-id="pub34" aria-label="Courses DAI 1 &amp; 2, School of Architecture of Madrid: En acción 1.10 Jugando en la ciudad"><polygon class="shape" points="161.8,242.0 167.6,252.4 156.1,252.4"/></a>
+<a href="#pub32" class="mark" data-id="pub32" aria-label="STOY Jurbaning: Sustainable toy"><polygon class="shape" points="187.6,242.0 193.3,252.4 181.8,252.4"/></a>
+<a href="#pub33" class="mark" data-id="pub33" aria-label="Propedeutic experimental workshop"><polygon class="shape" points="202.6,242.0 208.3,252.4 196.8,252.4"/></a>
+<a href="#pub28" class="mark" data-id="pub28" aria-label="I Wish"><polygon class="shape" points="220.8,242.0 226.5,252.4 215.1,252.4"/></a>
+<a href="#pub29" class="mark" data-id="pub29" aria-label="Cúbreme Latina"><polygon class="shape" points="235.8,242.0 241.5,252.4 230.1,252.4"/></a>
+<a href="#pub31" class="mark" data-id="pub31" aria-label="100X10 Centro de Tecnificación Proyectual"><polygon class="shape" points="228.3,258.0 234.0,268.4 222.6,268.4"/></a>
+<a href="#pub26" class="mark" data-id="pub26" aria-label="Computational cities: Parametric urban and architectonic design through the use of algorithms to manage big data"><polygon class="shape" points="353.7,242.0 359.4,252.4 347.9,252.4"/></a>
+<a href="#pub27" class="mark" data-id="pub27" aria-label="OUT - Open Urban Television"><polygon class="shape" points="368.7,242.0 374.4,252.4 362.9,252.4"/></a>
+<a href="#pub24" class="mark" data-id="pub24" aria-label="Hypermobile Commuter City: proyecto basado en datos (a data-driven project)"><polygon class="shape" points="386.9,242.0 392.6,252.4 381.2,252.4"/></a>
+<a href="#pub25" class="mark" data-id="pub25" aria-label="Open Urban Television"><polygon class="shape" points="401.9,242.0 407.6,252.4 396.2,252.4"/></a>
+<a href="#pub22" class="mark sel" data-id="pub22" aria-label="Digital twins: potentials, ethical issues and limitations"><polygon class="shape" points="586.2,239.5 594.4,254.3 578.1,254.3"/></a>
+<a href="#pub23" class="mark" data-id="pub23" aria-label="A Tale of Three Cities: On Digital Twins"><polygon class="shape" points="601.2,242.0 606.9,252.4 595.5,252.4"/></a>
+<a href="#pub50" class="mark" data-id="pub50" aria-label="C.O.N.T.A.G.I.O"><polygon class="shape" points="228.3,311.8 234.5,318.0 228.3,324.2 222.0,318.0"/></a>
+<a href="#pub49" class="mark" data-id="pub49" aria-label="Hazlo tú-yo"><polygon class="shape" points="327.9,311.8 334.2,318.0 327.9,324.2 321.7,318.0"/></a>
+<a href="#pub48" class="mark" data-id="pub48" aria-label="Watching Puerta del Sol"><polygon class="shape" points="394.4,311.8 400.6,318.0 394.4,324.2 388.1,318.0"/></a>
+<a href="#pub36" class="mark" data-id="pub36" aria-label="What You See Is What You Get: Data-Informed Workflow in Design for Architecture and Urbanism"><polygon class="shape" points="420.1,311.8 426.4,318.0 420.1,324.2 413.9,318.0"/></a>
+<a href="#pub45" class="mark" data-id="pub45" aria-label="HyperMobile Commuter City"><polygon class="shape" points="435.1,311.8 441.4,318.0 435.1,324.2 428.9,318.0"/></a>
+<a href="#pub46" class="mark" data-id="pub46" aria-label="Open Urban Television"><polygon class="shape" points="420.1,327.8 426.4,334.0 420.1,340.2 413.9,334.0"/></a>
+<a href="#pub47" class="mark" data-id="pub47" aria-label="Concursos: Museo del Palacio El Capricho: Volaverunt"><polygon class="shape" points="435.1,327.8 441.4,334.0 435.1,340.2 428.9,334.0"/></a>
+<a href="#pub44" class="mark" data-id="pub44" aria-label="A city like you and me: Embracing uncertainty in the age of precise data"><polygon class="shape" points="560.5,311.8 566.7,318.0 560.5,324.2 554.3,318.0"/></a>
+<a href="#pub35" class="mark" data-id="pub35" aria-label="Simulating Urban Complexity for City Co-Creation on Three Scales"><polygon class="shape" points="619.4,311.8 625.7,318.0 619.4,324.2 613.2,318.0"/></a>
+<a href="#pub43" class="mark" data-id="pub43" aria-label="Co-Creating the Future: Participatory Cities and Digital Governance"><polygon class="shape" points="634.4,311.8 640.7,318.0 634.4,324.2 628.2,318.0"/></a>
+<a href="#pub42" class="mark" data-id="pub42" aria-label="Jenseits der Gemeindeversammlung: Wie Visualisierung die Schweizer Demokratie stärken kann"><polygon class="shape" points="693.4,311.8 699.6,318.0 693.4,324.2 687.1,318.0"/></a>
+</svg>
+<svg viewBox="0 0 720 476" role="group" aria-label="Every publication as a mark, by year and topic" class="dots" data-mode="topic" hidden>
+<line class="lane" x1="102" y1="16" x2="716" y2="16"/>
+<text class="lane-label" x="0" y="38">Digital twins</text>
+<line class="lane" x1="102" y1="102" x2="716" y2="102"/>
+<text class="lane-label" x="0" y="124">Participatory AI</text>
+<line class="lane" x1="102" y1="188" x2="716" y2="188"/>
+<text class="lane-label" x="0" y="210">Perception</text>
+<line class="lane" x1="102" y1="274" x2="716" y2="274"/>
+<text class="lane-label" x="0" y="296">Mobility</text>
+<line class="lane" x1="102" y1="360" x2="716" y2="360"/>
+<text class="lane-label" x="0" y="382">Design practice</text>
+<text class="tick" x="195.1" y="470" text-anchor="middle">2011</text>
+<text class="tick" x="294.7" y="470" text-anchor="middle">2014</text>
+<text class="tick" x="394.4" y="470" text-anchor="middle">2017</text>
+<text class="tick" x="494.1" y="470" text-anchor="middle">2020</text>
+<text class="tick" x="593.7" y="470" text-anchor="middle">2023</text>
+<a href="#pub14" class="mark sel" data-id="pub14" aria-label="Getting Real: The Challenge of Building and Validating a Large-Scale Digital Twin of Barcelona&#x27;s Traffic with Empirical Data"><circle class="shape" cx="553.0" cy="38.0" r="7.4"/></a>
+<a href="#pub44" class="mark" data-id="pub44" aria-label="A city like you and me: Embracing uncertainty in the age of precise data"><polygon class="shape" points="568.0,31.8 574.2,38.0 568.0,44.2 561.8,38.0"/></a>
+<a href="#pub11" class="mark" data-id="pub11" aria-label="Less can be more: Pruning street networks for sustainable city-making"><circle class="shape" cx="586.2" cy="38.0" r="5.2"/></a>
+<a href="#pub22" class="mark sel" data-id="pub22" aria-label="Digital twins: potentials, ethical issues and limitations"><polygon class="shape" points="601.2,29.5 609.4,44.3 593.1,44.3"/></a>
+<a href="#pub23" class="mark" data-id="pub23" aria-label="A Tale of Three Cities: On Digital Twins"><polygon class="shape" points="593.7,48.0 599.4,58.4 588.0,58.4"/></a>
+<a href="#pub35" class="mark" data-id="pub35" aria-label="Simulating Urban Complexity for City Co-Creation on Three Scales"><polygon class="shape" points="626.9,31.8 633.2,38.0 626.9,44.2 620.7,38.0"/></a>
+<a href="#pub06" class="mark sel" data-id="pub06" aria-label="Urban digital twins and metaverses towards city multiplicities: Uniting or dividing urban experiences?"><circle class="shape" cx="660.2" cy="38.0" r="7.4"/></a>
+<a href="#pub13" class="mark sel" data-id="pub13" aria-label="Participatory resilience: Surviving, recovering and improving together"><circle class="shape" cx="560.5" cy="124.0" r="7.4"/></a>
+<a href="#pub12" class="mark" data-id="pub12" aria-label="Democracy by Design: Perspectives for Digitally Assisted, Participatory Upgrades of Society"><circle class="shape" cx="593.7" cy="124.0" r="5.2"/></a>
+<a href="#pub18" class="mark" data-id="pub18" aria-label="Democratizing urban mobility through an open-source, multi-criteria route recommendation system"><rect class="shape" x="614.8" y="119.3" width="9.4" height="9.4"/></a>
+<a href="#pub43" class="mark" data-id="pub43" aria-label="Co-Creating the Future: Participatory Cities and Digital Governance"><polygon class="shape" points="634.4,117.8 640.7,124.0 634.4,130.2 628.2,124.0"/></a>
+<a href="#pub03" class="mark" data-id="pub03" aria-label="A replica for our democracies?"><circle class="shape" cx="685.9" cy="124.0" r="5.2"/></a>
+<a href="#pub17" class="mark" data-id="pub17" aria-label="OGD4All: A framework for accessible interaction with geospatial open government data based on large language models"><rect class="shape" x="696.2" y="119.3" width="9.4" height="9.4"/></a>
+<a href="#pub37" class="mark" data-id="pub37" aria-label="Fake Plastic Voters: When Political Parties Can Use AI-Simulated Focus Groups"><circle class="shape ring" cx="685.9" cy="140.0" r="4.6"/></a>
+<a href="#pub38" class="mark" data-id="pub38" aria-label="Co-Evolving City Life (CoCi): A System Architecture Proposal for Participatory Smart Cities"><circle class="shape ring" cx="700.9" cy="140.0" r="4.6"/></a>
+<a href="#pub39" class="mark" data-id="pub39" aria-label="Beyond the Townhall: Spatial Anchoring and LLM Agents for Scalable Participatory Urban Planning"><circle class="shape ring" cx="685.9" cy="156.0" r="4.6"/></a>
+<a href="#pub41" class="mark" data-id="pub41" aria-label="Routify.ch: An Open-Source Framework for Pluralistic Urban Routing"><circle class="shape ring" cx="700.9" cy="156.0" r="4.6"/></a>
+<a href="#pub42" class="mark" data-id="pub42" aria-label="Jenseits der Gemeindeversammlung: Wie Visualisierung die Schweizer Demokratie stärken kann"><polygon class="shape" points="693.4,165.8 699.6,172.0 693.4,178.2 687.1,172.0"/></a>
+<a href="#pub36" class="mark" data-id="pub36" aria-label="What You See Is What You Get: Data-Informed Workflow in Design for Architecture and Urbanism"><polygon class="shape" points="427.6,203.8 433.9,210.0 427.6,216.2 421.4,210.0"/></a>
+<a href="#pub20" class="mark" data-id="pub20" aria-label="An ecology of conflicts"><rect class="shape" x="448.7" y="205.3" width="9.4" height="9.4"/></a>
+<a href="#pub21" class="mark" data-id="pub21" aria-label="The social life of small urban spaces 2.0"><rect class="shape" x="463.7" y="205.3" width="9.4" height="9.4"/></a>
+<a href="#pub19" class="mark" data-id="pub19" aria-label="Transhistorical urban landscape as hypermap"><rect class="shape" x="589.0" y="205.3" width="9.4" height="9.4"/></a>
+<a href="#pub10" class="mark sel" data-id="pub10" aria-label="A virtual reality experiment to study pedestrian perception of future street scenarios"><circle class="shape" cx="626.9" cy="210.0" r="7.4"/></a>
+<a href="#pub01" class="mark" data-id="pub01" aria-label="Treespotting AR (TSAR): Re-Enchanting Minimal Phygital Ecologies"><circle class="shape" cx="685.9" cy="210.0" r="5.2"/></a>
+<a href="#pub02" class="mark" data-id="pub02" aria-label="Semantic urban elements: A Design+Science paradigm to augment human-centric cities?"><circle class="shape" cx="700.9" cy="210.0" r="5.2"/></a>
+<a href="#pub04" class="mark" data-id="pub04" aria-label="Not your mean green: beyond averages in mapping socio-spatial inequities in urban greenery for smart cities"><circle class="shape" cx="685.9" cy="226.0" r="5.2"/></a>
+<a href="#pub16" class="mark" data-id="pub16" aria-label="In The Eyes Of: An Offline-First System for Geolocalized Expert Narration in Heritage Interpretation"><rect class="shape" x="696.2" y="221.3" width="9.4" height="9.4"/></a>
+<a href="#pub40" class="mark" data-id="pub40" aria-label="From Particles to Agents: Hallucination as a Metric for Cognitive Friction in Spatial Simulation"><circle class="shape ring" cx="693.4" cy="242.0" r="4.6"/></a>
+<a href="#pub08" class="mark sel" data-id="pub08" aria-label="Global comparison of urban bike-sharing accessibility across 40 cities"><circle class="shape" cx="619.4" cy="296.0" r="7.4"/></a>
+<a href="#pub09" class="mark" data-id="pub09" aria-label="Cooperative adaptable lanes for safer shared space and improved mixed-traffic flow"><circle class="shape" cx="634.4" cy="296.0" r="5.2"/></a>
+<a href="#pub05" class="mark" data-id="pub05" aria-label="Spatial econometrics to estimate the traffic reduction by transforming office space into housing: The case for Barcelona"><circle class="shape" cx="652.7" cy="296.0" r="5.2"/></a>
+<a href="#pub07" class="mark" data-id="pub07" aria-label="FAIRLANE: A multi-agent approach to priority lane management in diverse traffic composition"><circle class="shape" cx="667.7" cy="296.0" r="5.2"/></a>
+<a href="#pub30" class="mark" data-id="pub30" aria-label="Programación de Ecosistemas Virtuales como laboratorio de negociación: Protoz00p (Programming virtual ecosystems as a negotiation lab)"><polygon class="shape" points="128.6,376.0 134.3,386.4 122.9,386.4"/></a>
+<a href="#pub34" class="mark" data-id="pub34" aria-label="Courses DAI 1 &amp; 2, School of Architecture of Madrid: En acción 1.10 Jugando en la ciudad"><polygon class="shape" points="161.8,376.0 167.6,386.4 156.1,386.4"/></a>
+<a href="#pub32" class="mark" data-id="pub32" aria-label="STOY Jurbaning: Sustainable toy"><polygon class="shape" points="187.6,376.0 193.3,386.4 181.8,386.4"/></a>
+<a href="#pub33" class="mark" data-id="pub33" aria-label="Propedeutic experimental workshop"><polygon class="shape" points="202.6,376.0 208.3,386.4 196.8,386.4"/></a>
+<a href="#pub28" class="mark" data-id="pub28" aria-label="I Wish"><polygon class="shape" points="220.8,376.0 226.5,386.4 215.1,386.4"/></a>
+<a href="#pub29" class="mark" data-id="pub29" aria-label="Cúbreme Latina"><polygon class="shape" points="235.8,376.0 241.5,386.4 230.1,386.4"/></a>
+<a href="#pub31" class="mark" data-id="pub31" aria-label="100X10 Centro de Tecnificación Proyectual"><polygon class="shape" points="220.8,392.0 226.5,402.4 215.1,402.4"/></a>
+<a href="#pub50" class="mark" data-id="pub50" aria-label="C.O.N.T.A.G.I.O"><polygon class="shape" points="235.8,391.8 242.0,398.0 235.8,404.2 229.5,398.0"/></a>
+<a href="#pub49" class="mark" data-id="pub49" aria-label="Hazlo tú-yo"><polygon class="shape" points="327.9,375.8 334.2,382.0 327.9,388.2 321.7,382.0"/></a>
+<a href="#pub26" class="mark" data-id="pub26" aria-label="Computational cities: Parametric urban and architectonic design through the use of algorithms to manage big data"><polygon class="shape" points="353.7,376.0 359.4,386.4 347.9,386.4"/></a>
+<a href="#pub27" class="mark" data-id="pub27" aria-label="OUT - Open Urban Television"><polygon class="shape" points="368.7,376.0 374.4,386.4 362.9,386.4"/></a>
+<a href="#pub24" class="mark" data-id="pub24" aria-label="Hypermobile Commuter City: proyecto basado en datos (a data-driven project)"><polygon class="shape" points="386.9,376.0 392.6,386.4 381.2,386.4"/></a>
+<a href="#pub25" class="mark" data-id="pub25" aria-label="Open Urban Television"><polygon class="shape" points="401.9,376.0 407.6,386.4 396.2,386.4"/></a>
+<a href="#pub48" class="mark" data-id="pub48" aria-label="Watching Puerta del Sol"><polygon class="shape" points="394.4,391.8 400.6,398.0 394.4,404.2 388.1,398.0"/></a>
+<a href="#pub15" class="mark" data-id="pub15" aria-label="Autonomy and Automation in the Architectural Project: the Algorithm of the Hypermobile Commuters City"><circle class="shape" cx="420.1" cy="382.0" r="5.2"/></a>
+<a href="#pub45" class="mark" data-id="pub45" aria-label="HyperMobile Commuter City"><polygon class="shape" points="435.1,375.8 441.4,382.0 435.1,388.2 428.9,382.0"/></a>
+<a href="#pub46" class="mark" data-id="pub46" aria-label="Open Urban Television"><polygon class="shape" points="420.1,391.8 426.4,398.0 420.1,404.2 413.9,398.0"/></a>
+<a href="#pub47" class="mark" data-id="pub47" aria-label="Concursos: Museo del Palacio El Capricho: Volaverunt"><polygon class="shape" points="435.1,391.8 441.4,398.0 435.1,404.2 428.9,398.0"/></a>
+</svg>
+      <ul class="legend"><li><svg viewBox="-9 -9 18 18" width="16" height="16" aria-hidden="true"><circle class="shape" cx="0.0" cy="0.0" r="5.0"/></svg><span>Journal article</span></li><li><svg viewBox="-9 -9 18 18" width="16" height="16" aria-hidden="true"><rect class="shape" x="-4.5" y="-4.5" width="9.0" height="9.0"/></svg><span>Conference paper</span></li><li><svg viewBox="-9 -9 18 18" width="16" height="16" aria-hidden="true"><polygon class="shape" points="0.0,-5.8 5.5,4.2 -5.5,4.2"/></svg><span>Book or chapter</span></li><li><svg viewBox="-9 -9 18 18" width="16" height="16" aria-hidden="true"><circle class="shape ring" cx="0.0" cy="0.0" r="4.4"/></svg><span>Preprint</span></li><li><svg viewBox="-9 -9 18 18" width="16" height="16" aria-hidden="true"><polygon class="shape" points="0.0,-6.0 6.0,0.0 0.0,6.0 -6.0,0.0"/></svg><span>Thesis or other</span></li><li class="legend-sel"><svg viewBox="-9 -9 18 18" width="18" height="18" aria-hidden="true"><circle class="shape" cx="0" cy="0" r="7.4"/></svg><span>Larger and blue: selected</span></li></ul>
+      <figcaption>Every publication is one mark. Hover or focus a mark to see which paper it is, click it to jump to the entry.</figcaption>
+    </figure>
+  </div>
+</section>
 
-            // Map mouseY to a green component (0-255)
-            // As mouseY moves from top to bottom, green increases
-            const green = Math.floor((mouseY / viewportHeight) * 255);
+<!-- RESEARCH -->
+<section class="sec" id="research">
+  <div class="wrap sec-grid">
+    <h2 class="sec-label">Research</h2>
+    <div class="sec-body threads">
+      <article class="thread">
+        <h3>Urban digital twins and complexity</h3>
+        <p>How far can a model of a city be trusted, and for whom is it built? Work on validating a large-scale digital twin of traffic with empirical data, on the limits and ethics of twins and metaverses, and on how pruning street networks changes city-making.</p>
+        <p class="more"><a href="#pub14">Barcelona traffic twin</a>, <a href="#pub06">twins and metaverses</a>, <a href="#pub11">pruning street networks</a></p>
+      </article>
+      <article class="thread">
+        <h3>Participatory and pluralistic AI</h3>
+        <p>Language-model agents, digital twins and open data used to widen participation in planning and in democratic deliberation, from a replica of deliberative democracy to townhall-scale planning and routing that serves more than one objective.</p>
+        <p class="more"><a href="#pub03">digital twins for deliberative democracy</a>, <a href="#pub39">LLM agents for participatory planning</a>, <a href="#pub17">open government data with LLMs</a></p>
+      </article>
+      <article class="thread">
+        <h3>Perception and the built environment</h3>
+        <p>Experiments on how people see and talk about places: virtual-reality studies of future streets, semantic urban elements, socio-spatial inequities in urban greenery, hallucination as a measure of cognitive friction, and augmented-reality installations.</p>
+        <p class="more"><a href="#pub10">VR study of future streets</a>, <a href="#pub02">semantic urban elements</a>, <a href="#pub04">urban greenery inequities</a></p>
+      </article>
+      <article class="thread">
+        <h3>Cooperative mobility</h3>
+        <p>Multi-agent and spatial models of traffic and accessibility: priority and adaptable lanes for mixed traffic, bike-sharing accessibility across cities, and the traffic effects of turning office space into housing.</p>
+        <p class="more"><a href="#pub07">priority lane management</a>, <a href="#pub08">bike-sharing across 40 cities</a>, <a href="#pub05">office space into housing</a></p>
+      </article>
+    </div>
+  </div>
+</section>
 
-            // Use a fixed or combined value for blue, or map it to something else
-            // Here, we'll make blue inversely proportional to the average of red and green for variety
-            const blue = Math.floor(255 - ((red + green) / 2));
+<!-- PROJECTS: featured + compact grid (not three equal cards) -->
+<section class="sec" id="projects">
+  <div class="wrap sec-grid">
+    <h2 class="sec-label">Projects</h2>
+    <div class="sec-body">
 
-            // Set the background color of the body
-            document.body.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
-        });
-    </script>
+      <article class="project featured">
+        <figure class="shot shot-wide invert-dark"><img src="assets/img/tsar-tree.jpg" alt="Monochrome point-cloud model of a plane tree, the Treespotting AR installation" width="1800" height="1262" loading="lazy"><figcaption>Point-cloud model of the plane tree. Figure from the TSAR paper (Romero Carnicero and Argota Sánchez-Vaquerizo, 2026); reuse terms to be confirmed.</figcaption></figure>
+        <div class="project-text">
+          <h3>Treespotting AR (TSAR)</h3>
+          <div>
+          <p>A monochromatic point-cloud installation in augmented reality, learning from Cesare Leonardi and Franca Stagi's graphics of trees. It reduces data to increase phenomenological engagement with urban nature, and was field-tested by 430 participants. Shown in Modena and Karlsruhe in 2025 and presented at the Digital Landscape Architecture conference in Dublin in 2026.</p>
+          <p class="links"><a href="https://doi.org/10.14627/537770027">Paper</a></p>
+          </div>
+        </div>
+      </article>
+
+      <div class="project-grid">
+        <article class="project">
+          <figure class="shot mono"><img src="assets/img/sue-fig1.jpg" alt="Diagram of the Design+Science approach: reality, modality, validity and transitivity linked by relevance arrows" width="1019" height="774" loading="lazy"><figcaption>Design+Science diagram. Figure from Quintana et al. (2026); reuse terms to be confirmed.</figcaption></figure>
+          <h3>Semantic Urban Elements</h3>
+          <p>A Design+Science paradigm to augment human-centric cities, developed at Future Cities Lab Global, Singapore-ETH Centre.</p>
+          <p class="links"><a href="https://doi.org/10.1177/23998083261448244">Paper</a></p>
+        </article>
+        <article class="project">
+          <figure class="shot mono"><img src="assets/img/work/ogd4all.png" alt="OGD4All overview: dataset retrieval followed by analysis and map output" width="900" height="260" loading="lazy"></figure>
+          <h3>OGD4All</h3>
+          <p>A framework for accessible interaction with geospatial open government data based on large language models, with ESRI.</p>
+          <p class="links"><a href="https://doi.org/10.1109/CAI68641.2026.11536530">Paper</a> <a href="https://github.com/ethz-coss/OGD4All">Code</a> <a href="https://arxiv.org/abs/2602.00012">Preprint</a></p>
+        </article>
+        <article class="project">
+          <figure class="shot mono"><img src="assets/img/work/routify.png" alt="Routify interface: a map with two compared routes and parameter panels" width="900" height="560" loading="lazy"></figure>
+          <h3>Routify.ch</h3>
+          <p>An open-source framework for pluralistic urban routing, a route recommender that serves several objectives at once.</p>
+          <p class="links"><a href="https://routify.ch">Live</a> <a href="https://github.com/ethz-coss/routify">Code</a> <a href="https://ssrn.com/abstract=6074547">Preprint</a> <a href="https://doi.org/10.1145/3640457.3691702">Earlier paper</a></p>
+        </article>
+        <article class="project">
+          <figure class="shot mono"><img src="assets/img/work/intheeyesof.jpg" alt="In the Eyes Of viewer: a 3D scan of a heritage site with a gaze cone" width="900" height="520" loading="lazy"></figure>
+          <h3>In the Eyes Of</h3>
+          <p>An offline-first system for geolocalized expert narration in heritage interpretation, with Virginia Tech collaborators. Poster at Meta's Research Summit for Egocentric Intelligence, July 2026.</p>
+          <p class="links"><a href="https://github.com/MicahWissman/InTheEyesOf">Code</a> <a href="https://doi.org/10.5281/zenodo.21776985">Software (Zenodo)</a></p>
+        </article>
+        <article class="project">
+          <figure class="shot mono"><img src="assets/img/work/coci.jpg" alt="Rendering of a city folded into a globe, with old town, parks and towers" width="900" height="905" loading="lazy"></figure>
+          <h3>Co-Evolving City Life</h3>
+          <p>An ERC Advanced Grant project at the Professorship of Computational Social Science on decentralised, participatory approaches to city life.</p>
+          <p class="links"><a href="https://coss.ethz.ch/research/CoCi.html">Project page</a> <a href="https://cordis.europa.eu/project/id/833168">CORDIS</a> <a href="https://doi.org/10.2828/6002899">Featured in an EU report</a></p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PUBLICATIONS: complete, generated from the CV source -->
+<section class="sec" id="publications">
+  <div class="wrap sec-grid">
+    <h2 class="sec-label">Publications</h2>
+    <div class="sec-body">
+<div class="featured-pubs">
+<h3>Selected</h3>
+<ul class="work">
+<li class="work-item"><a class="work-thumb" href="#pub06" tabindex="-1" aria-hidden="true"><img src="assets/img/work/eit.jpg" alt="" loading="lazy"></a><div class="work-text"><a class="work-title" href="#pub06">Urban digital twins and metaverses towards city multiplicities: Uniting or dividing urban experiences?</a><span class="work-meta">Argota Sánchez-Vaquerizo, Ethics and Information Technology, 2025</span> <a class="work-link" href="https://doi.org/10.1007/s10676-024-09812-3">DOI</a></div></li>
+<li class="work-item"><a class="work-thumb" href="#pub08" tabindex="-1" aria-hidden="true"><img src="assets/img/work/bike-sharing.jpg" alt="" loading="lazy"></a><div class="work-text"><a class="work-title" href="#pub08">Global comparison of urban bike-sharing accessibility across 40 cities</a><span class="work-meta">Mahajan and Argota Sánchez-Vaquerizo, Scientific Reports, 2024</span> <a class="work-link" href="https://doi.org/10.1038/s41598-024-70706-x">DOI</a></div></li>
+<li class="work-item"><a class="work-thumb" href="#pub10" tabindex="-1" aria-hidden="true"><img src="assets/img/work/vr.png" alt="" loading="lazy"></a><div class="work-text"><a class="work-title" href="#pub10">A virtual reality experiment to study pedestrian perception of future street scenarios</a><span class="work-meta">Argota Sánchez-Vaquerizo et al., Scientific Reports, 2024</span> <a class="work-link" href="https://doi.org/10.1038/s41598-024-55073-x">DOI</a></div></li>
+<li class="work-item"><a class="work-thumb tile" href="#pub22" tabindex="-1" aria-hidden="true"><span>Handbook chapter</span><b>2023</b></a><div class="work-text"><a class="work-title" href="#pub22">Digital twins: potentials, ethical issues and limitations</a><span class="work-meta">Helbing and Argota Sánchez-Vaquerizo, Handbook on the Politics and Governance of Big Data and Artificial Intelligence, 2023</span> <a class="work-link" href="https://doi.org/10.4337/9781800887374.00013">DOI</a></div></li>
+<li class="work-item"><a class="work-thumb" href="#pub13" tabindex="-1" aria-hidden="true"><img src="assets/img/work/participatory-resilience.jpg" alt="" loading="lazy"></a><div class="work-text"><a class="work-title" href="#pub13">Participatory resilience: Surviving, recovering and improving together</a><span class="work-meta">Mahajan et al., Sustainable Cities and Society, 2022</span> <a class="work-link" href="https://doi.org/10.1016/j.scs.2022.103942">DOI</a></div></li>
+<li class="work-item"><a class="work-thumb" href="#pub14" tabindex="-1" aria-hidden="true"><img src="assets/img/work/getting-real.jpg" alt="" loading="lazy"></a><div class="work-text"><a class="work-title" href="#pub14">Getting Real: The Challenge of Building and Validating a Large-Scale Digital Twin of Barcelona&#x27;s Traffic with Empirical Data</a><span class="work-meta">Argota Sánchez-Vaquerizo, ISPRS International Journal of Geo-Information, 2022</span> <a class="work-link" href="https://doi.org/10.3390/ijgi11010024">DOI</a></div></li>
+</ul>
+<h3>Latest</h3>
+<ul class="work">
+<li class="work-item"><a class="work-thumb" href="#pub01" tabindex="-1" aria-hidden="true"><img src="assets/img/work/tsar.jpg" alt="" loading="lazy"></a><div class="work-text"><a class="work-title" href="#pub01">Treespotting AR (TSAR): Re-Enchanting Minimal Phygital Ecologies</a><span class="work-meta">Romero Carnicero and Argota Sánchez-Vaquerizo, Journal of Digital Landscape Architecture, 2026</span> <a class="work-link" href="https://doi.org/10.14627/537770027">DOI</a></div></li>
+<li class="work-item"><a class="work-thumb" href="#pub02" tabindex="-1" aria-hidden="true"><img src="assets/img/work/sue.jpg" alt="" loading="lazy"></a><div class="work-text"><a class="work-title" href="#pub02">Semantic urban elements: A Design+Science paradigm to augment human-centric cities?</a><span class="work-meta">Quintana et al., Environment and Planning B: Urban Analytics and City Science, 2026</span> <a class="work-link" href="https://doi.org/10.1177/23998083261448244">DOI</a></div></li>
+<li class="work-item"><a class="work-thumb" href="#pub39" tabindex="-1" aria-hidden="true"><img src="assets/img/work/beyond-townhall.jpg" alt="" loading="lazy"></a><div class="work-text"><a class="work-title" href="#pub39">Beyond the Townhall: Spatial Anchoring and LLM Agents for Scalable Participatory Urban Planning</a><span class="work-meta">Hausladen et al., arXiv, 2026</span> <a class="work-link" href="https://arxiv.org/abs/2604.16348">arXiv</a></div></li>
+<li class="work-item"><a class="work-thumb" href="#pub17" tabindex="-1" aria-hidden="true"><img src="assets/img/work/ogd4all.png" alt="" loading="lazy"></a><div class="work-text"><a class="work-title" href="#pub17">OGD4All: A framework for accessible interaction with geospatial open government data based on large language models</a><span class="work-meta">Siebenmann et al., IEEE Conference on Artificial Intelligence (CAI), 2026</span> <a class="work-link" href="https://doi.org/10.1109/CAI68641.2026.11536530">DOI</a> <a class="work-link" href="https://github.com/ethz-coss/OGD4All">Code</a></div></li>
+</ul>
+</div>
+      <h3 class="all-title">All publications</h3>
+      <div class="chips" role="group" aria-label="Filter publications">
+<button type="button" class="chip" data-filter="all" aria-pressed="true">All (50)</button>
+<button type="button" class="chip" data-filter="selected" aria-pressed="false">Selected (6)</button>
+<button type="button" class="chip" data-filter="journal" aria-pressed="false">Journal articles (15)</button>
+<button type="button" class="chip" data-filter="conference" aria-pressed="false">Conference papers (6)</button>
+<button type="button" class="chip" data-filter="chapter" aria-pressed="false">Book chapters (9)</button>
+<button type="button" class="chip" data-filter="book" aria-pressed="false">Books (4)</button>
+<button type="button" class="chip" data-filter="thesis" aria-pressed="false">Theses (2)</button>
+<button type="button" class="chip" data-filter="preprint" aria-pressed="false">Preprints (5)</button>
+<button type="button" class="chip" data-filter="other" aria-pressed="false">Other publications (9)</button>
+      </div>
+      <p class="note">Every publication is listed with its DOI, arXiv or SSRN link where one exists. Citation counts and the live list are on <a href="http://scholar.google.com/citations?user=OVTnYkgAAAAJ">Google Scholar</a>.</p>
+<ol class="pubs">
+<li class="pub" id="pub01" data-type="journal">
+  <span class="year">2026</span>
+  <div class="cite">Romero Carnicero, A., &amp; <strong>Argota Sánchez-Vaquerizo, J.</strong> (2026). Treespotting AR (TSAR): Re-Enchanting Minimal Phygital Ecologies. <em>Journal of Digital Landscape Architecture</em>. <a href="https://doi.org/10.14627/537770027">doi:10.14627/537770027</a> </div>
+</li>
+<li class="pub" id="pub02" data-type="journal">
+  <span class="year">2026</span>
+  <div class="cite">Quintana, M., Cai, C., Dubey, R. K., <strong>Argota Sánchez-Vaquerizo, J.</strong>, Gu, Y., Kuriyama, K., Li, S., Hölscher, C., von Richthofen, A., Herthogs, P., Helbing, D., &amp; Biljecki, F. (2026). Semantic urban elements: A Design+Science paradigm to augment human-centric cities? <em>Environment and Planning B: Urban Analytics and City Science</em>. <a href="https://doi.org/10.1177/23998083261448244">doi:10.1177/23998083261448244</a> </div>
+</li>
+<li class="pub" id="pub03" data-type="journal">
+  <span class="year">2026</span>
+  <div class="cite">Novelli, C., <strong>Argota Sánchez-Vaquerizo, J.</strong>, Helbing, D., Rotolo, A., &amp; Floridi, L. (2026). A replica for our democracies? On using digital twins to enhance deliberative democracy. <em>AI &amp; SOCIETY</em>, 41(3), 1783-1801. <a href="https://doi.org/10.1007/s00146-025-02511-7">doi:10.1007/s00146-025-02511-7</a>. Extended preprint: <a href="https://ssrn.com/abstract=5193012">https://ssrn.com/abstract=5193012</a> </div>
+</li>
+<li class="pub" id="pub04" data-type="journal">
+  <span class="year">2026</span>
+  <div class="cite">Martinez, J., <strong>Argota Sánchez-Vaquerizo, J.</strong>, &amp; Mahajan, S. (2026). Not your mean green: beyond averages in mapping socio-spatial inequities in urban greenery for smart cities. <em>EPJ Data Science</em>, 15(1), 25. <a href="https://doi.org/10.1140/epjds/s13688-026-00627-4">doi:10.1140/epjds/s13688-026-00627-4</a> </div>
+</li>
+<li class="pub" id="pub05" data-type="journal">
+  <span class="year">2025</span>
+  <div class="cite"><strong>Argota Sánchez-Vaquerizo, J.</strong> &amp; Helbing, D. (2025). Spatial econometrics to estimate the traffic reduction by transforming office space into housing: The case for Barcelona. <em>Cities</em>, 162, 105901. <a href="https://doi.org/10.1016/j.cities.2025.105901">doi:10.1016/j.cities.2025.105901</a>. Preprint: <a href="https://ssrn.com/abstract=4917176">https://ssrn.com/abstract=4917176</a> </div>
+</li>
+<li class="pub" id="pub06" data-type="journal" data-selected="1">
+  <span class="year">2025<span class="tag-sel">Selected</span></span>
+  <div class="cite"><strong>Argota Sánchez-Vaquerizo, J.</strong> (2025). Urban digital twins and metaverses towards city multiplicities: Uniting or dividing urban experiences? <em>Ethics and Information Technology</em>, 27(1), 4. <a href="https://doi.org/10.1007/s10676-024-09812-3">doi:10.1007/s10676-024-09812-3</a> </div>
+</li>
+<li class="pub" id="pub07" data-type="journal">
+  <span class="year">2025</span>
+  <div class="cite">Dubey, R. K., Dailisan, D., <strong>Argota Sánchez-Vaquerizo, J.</strong>, &amp; Helbing, D. (2025). FAIRLANE: A multi-agent approach to priority lane management in diverse traffic composition. <em>Transportation Research Part C: Emerging Technologies</em>, 171, 104919. <a href="https://doi.org/10.1016/j.trc.2024.104919">doi:10.1016/j.trc.2024.104919</a> </div>
+</li>
+<li class="pub" id="pub08" data-type="journal" data-selected="1">
+  <span class="year">2024<span class="tag-sel">Selected</span></span>
+  <div class="cite">Mahajan, S., &amp; <strong>Argota Sánchez-Vaquerizo, J.</strong> (2024). Global comparison of urban bike-sharing accessibility across 40 cities. <em>Scientific Reports</em>, 14(1), 20493. <a href="https://doi.org/10.1038/s41598-024-70706-x">doi:10.1038/s41598-024-70706-x</a>. Preprint: <a href="https://ssrn.com/abstract=4853905">https://ssrn.com/abstract=4853905</a> </div>
+</li>
+<li class="pub" id="pub09" data-type="journal">
+  <span class="year">2024</span>
+  <div class="cite">Dubey, R. K., <strong>Argota Sánchez-Vaquerizo, J.</strong>, Dailisan, D., &amp; Helbing, D. (2024). Cooperative adaptable lanes for safer shared space and improved mixed-traffic flow. <em>Transportation Research Part C: Emerging Technologies</em>, 166, 104748. <a href="https://doi.org/10.1016/j.trc.2024.104748">doi:10.1016/j.trc.2024.104748</a> </div>
+</li>
+<li class="pub" id="pub10" data-type="journal" data-selected="1">
+  <span class="year">2024<span class="tag-sel">Selected</span></span>
+  <div class="cite"><strong>Argota Sánchez-Vaquerizo, J.</strong>, Hausladen, C. I., Mahajan, S., Matter, M., Siebenmann, M., van Eggermond, M. A. B., &amp; Helbing, D. (2024). A virtual reality experiment to study pedestrian perception of future street scenarios. <em>Scientific Reports</em>, 14(1), 4571. <a href="https://doi.org/10.1038/s41598-024-55073-x">doi:10.1038/s41598-024-55073-x</a> </div>
+</li>
+<li class="pub" id="pub11" data-type="journal">
+  <span class="year">2023</span>
+  <div class="cite"><strong>Argota Sánchez-Vaquerizo, J.</strong> &amp; Helbing, D. (2023). Less can be more: Pruning street networks for sustainable city-making. <em>Transportation Research Interdisciplinary Perspectives</em>, 21, 100878. <a href="https://doi.org/10.1016/j.trip.2023.100878">doi:10.1016/j.trip.2023.100878</a> </div>
+</li>
+<li class="pub" id="pub12" data-type="journal">
+  <span class="year">2023</span>
+  <div class="cite">Helbing, D., Mahajan, S., Fricker, R. H., Musso, A., Hausladen, C. I., Carissimo, C., Damasco, C., Pournaras, E., <strong>Argota Sánchez-Vaquerizo, J.</strong>, et al. (2023). Democracy by Design: Perspectives for Digitally Assisted, Participatory Upgrades of Society. <em>Journal of Computational Science</em>, 71, 102061. <a href="https://doi.org/10.1016/j.jocs.2023.102061">doi:10.1016/j.jocs.2023.102061</a> </div>
+</li>
+<li class="pub" id="pub13" data-type="journal" data-selected="1">
+  <span class="year">2022<span class="tag-sel">Selected</span></span>
+  <div class="cite">Mahajan, S., Hausladen, C. I., <strong>Argota Sánchez-Vaquerizo, J.</strong>, Korecki, M., &amp; Helbing, D. (2022). Participatory resilience: Surviving, recovering and improving together. <em>Sustainable Cities and Society</em>, 83, 103942. <a href="https://doi.org/10.1016/j.scs.2022.103942">doi:10.1016/j.scs.2022.103942</a> </div>
+</li>
+<li class="pub" id="pub14" data-type="journal" data-selected="1">
+  <span class="year">2022<span class="tag-sel">Selected</span></span>
+  <div class="cite"><strong>Argota Sánchez-Vaquerizo, J.</strong> (2022). Getting Real: The Challenge of Building and Validating a Large-Scale Digital Twin of Barcelona's Traffic with Empirical Data. <em>ISPRS International Journal of Geo-Information</em>, 11(1), 24. <a href="https://doi.org/10.3390/ijgi11010024">doi:10.3390/ijgi11010024</a> </div>
+</li>
+<li class="pub" id="pub15" data-type="journal">
+  <span class="year">2018</span>
+  <div class="cite">Delso Gutiérrez, R., &amp; <strong>Argota Sánchez-Vaquerizo, J.</strong> (2018). Autonomy and Automation in the Architectural Project: the Algorithm of the Hypermobile Commuters City. <em>Journal of Architectural Education</em>, 72(1), 120-134. <a href="https://doi.org/10.1080/10464883.2018.1410668">doi:10.1080/10464883.2018.1410668</a> </div>
+</li>
+<li class="pub" id="pub16" data-type="conference">
+  <span class="year">2026</span>
+  <div class="cite">Borunda, L., <strong>Argota Sánchez-Vaquerizo, J.</strong>, Wissman, M., Lamoureux, K., Zhu, M., Marchiori, E., Gavazzi, A., &amp; Cantoni, L. (2026). In The Eyes Of: An Offline-First System for Geolocalized Expert Narration in Heritage Interpretation. In <em>Proceedings of NGEN-AI 2026</em>, Trento (Italy). Springer (forthcoming). </div>
+</li>
+<li class="pub" id="pub17" data-type="conference">
+  <span class="year">2026</span>
+  <div class="cite">Siebenmann, M., <strong>Argota Sánchez-Vaquerizo, J.</strong>, Arisona, S., Samp, K., Gisler, L., &amp; Helbing, D. (2026). OGD4All: A framework for accessible interaction with geospatial open government data based on large language models. In <em>2026 IEEE Conference on Artificial Intelligence (CAI)</em>, Granada (Spain), pp. 882-888. <a href="https://doi.org/10.1109/CAI68641.2026.11536530">doi:10.1109/CAI68641.2026.11536530</a>. Preprint: <a href="https://arxiv.org/abs/2602.00012">https://arxiv.org/abs/2602.00012</a> </div>
+</li>
+<li class="pub" id="pub18" data-type="conference">
+  <span class="year">2024</span>
+  <div class="cite">Eggerth, A., <strong>Argota Sánchez-Vaquerizo, J.</strong>, Helbing, D., &amp; Mahajan, S. (2024). Democratizing urban mobility through an open-source, multi-criteria route recommendation system. In <em>Proceedings of the 18th ACM Conference on Recommender Systems</em>, pp. 1073-1078. <a href="https://doi.org/10.1145/3640457.3691702">doi:10.1145/3640457.3691702</a> </div>
+</li>
+<li class="pub" id="pub19" data-type="conference">
+  <span class="year">2023</span>
+  <div class="cite">Negueruela del Castillo, D., Neri, I., Guhennec, P., <strong>Argota Sánchez-Vaquerizo, J.</strong>, Schaerf, L., Bernasconi, V., &amp; Ballesteros Zapata, P. (2023). Transhistorical urban landscape as hypermap. In <em>Proceedings of the 34th ACM Conference on Hypertext and Social Media</em>, pp. 1-5. ACM. <a href="https://doi.org/10.1145/3603163.3609083">doi:10.1145/3603163.3609083</a> </div>
+</li>
+<li class="pub" id="pub20" data-type="conference">
+  <span class="year">2019</span>
+  <div class="cite">Cardoso Llach, D., &amp; <strong>Argota Sánchez-Vaquerizo, J.</strong> (2019). An ecology of conflicts. In Lee, J. H. (Ed.), <em>Computer-Aided Architectural Design. Hello, Culture. CAAD Futures 2019</em>, CCIS Vol. 1028. Springer, Singapore. <a href="https://doi.org/10.1007/978-981-13-8410-3_15">doi:10.1007/978-981-13-8410-3_15</a> </div>
+</li>
+<li class="pub" id="pub21" data-type="conference">
+  <span class="year">2019</span>
+  <div class="cite"><strong>Argota Sánchez-Vaquerizo, J.</strong>, &amp; Cardoso Llach, D. (2019). The social life of small urban spaces 2.0. In Lee, J. H. (Ed.), <em>Computer-Aided Architectural Design. Hello, Culture. CAAD Futures 2019</em>, CCIS Vol. 1028. Springer, Singapore. <a href="https://doi.org/10.1007/978-981-13-8410-3_21">doi:10.1007/978-981-13-8410-3_21</a> </div>
+</li>
+<li class="pub" id="pub22" data-type="chapter" data-selected="1">
+  <span class="year">2023<span class="tag-sel">Selected</span></span>
+  <div class="cite">Helbing, D., &amp; <strong>Argota Sánchez-Vaquerizo, J.</strong> (2023). Digital twins: potentials, ethical issues and limitations. In <em>Handbook on the Politics and Governance of Big Data and Artificial Intelligence</em>, pp. 64-104. Edward Elgar Publishing. <a href="https://doi.org/10.4337/9781800887374.00013">doi:10.4337/9781800887374.00013</a>. Preprint: <a href="https://ssrn.com/abstract=4167963">https://ssrn.com/abstract=4167963</a> </div>
+</li>
+<li class="pub" id="pub23" data-type="chapter">
+  <span class="year">2023</span>
+  <div class="cite"><strong>Argota Sánchez-Vaquerizo, J.</strong>, &amp; Zurera Gómez, A. (2023). A Tale of Three Cities: On Digital Twins. In Veddeler, C., Kuijper, J., Gath-Morad, M., &amp; van der Wal, I. (Eds.), <em>Future Cities - City Futures: Emerging Urban Perspectives</em>, pp. 294-307. Delft: TU Delft OPEN. </div>
+</li>
+<li class="pub" id="pub24" data-type="chapter">
+  <span class="year">2017</span>
+  <div class="cite"><strong>Argota Sánchez-Vaquerizo, J.</strong> (2017). Hypermobile Commuter City: proyecto basado en datos (a data-driven project). In Espegel Alonso, C., Cánovas Alcaraz, A., &amp; Blanco Herrero, A. (Eds.), <em>Parlamentos y Datos. Unidad Espegel, 2015/2016. P3+P4</em>, pp. 108-118. Madrid: Mairea Libros. ISBN 978-84-946306-1-3. </div>
+</li>
+<li class="pub" id="pub25" data-type="chapter">
+  <span class="year">2017</span>
+  <div class="cite"><strong>Argota Sánchez-Vaquerizo, J.</strong>, Delso Gutiérrez, R., &amp; Gómez Saiz, A. (2017). Open Urban Television. In Espegel Alonso, C., Cánovas Alcaraz, A., &amp; Blanco Herrero, A. (Eds.), <em>Parlamentos y Datos. Unidad Espegel, 2015/2016. P3+P4</em>, pp. 32-41. Madrid: Mairea Libros. ISBN 978-84-946306-1-3. </div>
+</li>
+<li class="pub" id="pub26" data-type="chapter">
+  <span class="year">2016</span>
+  <div class="cite"><strong>Argota Sánchez-Vaquerizo, J.</strong>, &amp; Delso Gutiérrez, R. (2016). Computational cities: Parametric urban and architectonic design through the use of algorithms to manage big data. In Boni, A. L., et al. (Eds.), <em>Making cities. Visions for an urban future</em>, p. 118 and Annex 1-26. Brussels: Eurocities. </div>
+</li>
+<li class="pub" id="pub27" data-type="chapter">
+  <span class="year">2016</span>
+  <div class="cite"><strong>Argota Sánchez-Vaquerizo, J.</strong>, Delso Gutiérrez, R., &amp; Gómez Saiz, A. (2016). OUT - Open Urban Television. In Pop, S., Toft, T., &amp; Calvillo, N., <em>What Urban Media Art Can Do: Why When Where &amp; How</em>, pp. 112-115. Stuttgart: Avedition. ISBN 978-3899862553. </div>
+</li>
+<li class="pub" id="pub28" data-type="chapter">
+  <span class="year">2012</span>
+  <div class="cite"><strong>Argota Sánchez-Vaquerizo, J.</strong>, Busca Izquierdo, I., Delso Gutiérrez, R., Gómez Martín, B., &amp; de Miguel, M. (100x10), and Especulacciones course group (2012). I Wish. In <em>Eme3_2012 International Architecture Festival Catalogue. Share-it</em>, Barcelona, pp. 46-49. <a href="https://issuu.com/eme3/docs/eme3_2012_catalogo">https://issuu.com/eme3/docs/eme3_2012_catalogo</a>. </div>
+</li>
+<li class="pub" id="pub29" data-type="chapter">
+  <span class="year">2012</span>
+  <div class="cite">STOY research group, Especulacciones course group, and DAI course group (2012). Cúbreme Latina. In <em>Eme3_2012 International Architecture Festival Catalogue. Share-it</em>, Barcelona, pp. 232-235. <a href="https://issuu.com/eme3/docs/eme3_2012_catalogo">https://issuu.com/eme3/docs/eme3_2012_catalogo</a>. </div>
+</li>
+<li class="pub" id="pub30" data-type="chapter">
+  <span class="year">2009</span>
+  <div class="cite">Del Castillo, S., Castiñeira, E., &amp; <strong>Argota Sánchez-Vaquerizo, J.</strong> (2009). Programación de Ecosistemas Virtuales como laboratorio de negociación: Protoz00p (Programming virtual ecosystems as a negotiation lab). In Ribot, A., Borrego, I., García-Germán, J., &amp; García-Setién, J. (Eds.), <em>Colaboratorio ETSAM 2009</em>. Madrid: Mairea. ISBN 978-84-92641-37-6. </div>
+</li>
+<li class="pub" id="pub31" data-type="book">
+  <span class="year">2012</span>
+  <div class="cite"><strong>Argota Sánchez-Vaquerizo, J.</strong>, Busca Izquierdo, I., Delso Gutiérrez, R., Gómez Martín, B., &amp; de Miguel, M. (2012). <em>100X10 Centro de Tecnificación Proyectual</em>. Madrid: Mairea. ISBN 978-84-940020-7-6. </div>
+</li>
+<li class="pub" id="pub32" data-type="book">
+  <span class="year">2011</span>
+  <div class="cite"><strong>Argota Sánchez-Vaquerizo, J.</strong> &amp; Arriero, A. (Eds.) (2011). <em>STOY Jurbaning: Sustainable toy</em>. Madrid: Mairea. Research group Hypermedia. ISBN 978-84-615-4104-1. </div>
+</li>
+<li class="pub" id="pub33" data-type="book">
+  <span class="year">2011</span>
+  <div class="cite">Especulacciones group (2011). <em>Propedeutic experimental workshop</em>. ETSAM 2010-2011. Madrid: Mairea. </div>
+</li>
+<li class="pub" id="pub34" data-type="book">
+  <span class="year">2010</span>
+  <div class="cite"><strong>Argota Sánchez-Vaquerizo, J.</strong> (Ed.) (2010). Courses DAI 1 &amp; 2, School of Architecture of Madrid: <em>En acción 1.10 Jugando en la ciudad</em>. Madrid: Mairea. ISBN 978-84-92641-35-2. </div>
+</li>
+<li class="pub" id="pub35" data-type="thesis">
+  <span class="year">2024</span>
+  <div class="cite"><strong>Argota Sánchez-Vaquerizo, J.</strong> (2024). Simulating Urban Complexity for City Co-Creation on Three Scales. Doctoral dissertation, ETH Zurich. <a href="https://doi.org/10.3929/ethz-b-000699615">doi:10.3929/ethz-b-000699615</a> </div>
+</li>
+<li class="pub" id="pub36" data-type="thesis">
+  <span class="year">2018</span>
+  <div class="cite"><strong>Argota Sánchez-Vaquerizo, J.</strong> (2018). What You See Is What You Get: Data-Informed Workflow in Design for Architecture and Urbanism. M.Sc. in Computational Design dissertation, Carnegie Mellon University. <a href="https://doi.org/10.1184/R1/7063361.V1">doi:10.1184/R1/7063361.V1</a> </div>
+</li>
+<li class="pub" id="pub37" data-type="preprint">
+  <span class="year">2026</span>
+  <div class="cite">Novelli, C., <strong>Argota Sánchez-Vaquerizo, J.</strong>, Cyr, J., Formisano, G., McDougall, S., Sandri, G., &amp; Floridi, L. (2026). Fake Plastic Voters: When Political Parties Can Use AI-Simulated Focus Groups. <a href="https://arxiv.org/abs/2606.00043">arXiv:2606.00043</a> </div>
+</li>
+<li class="pub" id="pub38" data-type="preprint">
+  <span class="year">2026</span>
+  <div class="cite">Helbing, D., Hausladen, C. I., Mahajan, S., Asikis, T., Korecki, M., &amp; <strong>Argota Sánchez-Vaquerizo, J.</strong> (2026). Co-Evolving City Life (CoCi): A System Architecture Proposal for Participatory Smart Cities. ResearchGate. <a href="https://www.researchgate.net/publication/405867285">researchgate.net/publication/405867285</a> </div>
+</li>
+<li class="pub" id="pub39" data-type="preprint">
+  <span class="year">2026</span>
+  <div class="cite">Hausladen, C. I., <strong>Argota Sánchez-Vaquerizo, J.</strong>, Siebenmann, M., Capozzi, A., Mahajan, S., &amp; Helbing, D. (2026). Beyond the Townhall: Spatial Anchoring and LLM Agents for Scalable Participatory Urban Planning. <a href="https://arxiv.org/abs/2604.16348">arXiv:2604.16348</a> </div>
+</li>
+<li class="pub" id="pub40" data-type="preprint">
+  <span class="year">2026</span>
+  <div class="cite"><strong>Argota Sánchez-Vaquerizo, J.</strong> &amp; Borunda Monsivais, L. (2026). From Particles to Agents: Hallucination as a Metric for Cognitive Friction in Spatial Simulation. <a href="https://arxiv.org/abs/2601.21977">arXiv:2601.21977</a> </div>
+</li>
+<li class="pub" id="pub41" data-type="preprint">
+  <span class="year">2026</span>
+  <div class="cite">Mahajan, S., <strong>Argota Sánchez-Vaquerizo, J.</strong>, Eggerth, A., Schweighofer, C., &amp; Helbing, D. (2026). Routify.ch: An Open-Source Framework for Pluralistic Urban Routing. <em>SSRN</em>. <a href="https://ssrn.com/abstract=6074547">https://ssrn.com/abstract=6074547</a> </div>
+</li>
+<li class="pub" id="pub42" data-type="other">
+  <span class="year">2026</span>
+  <div class="cite">Hausladen, C. I., <strong>Argota Sánchez-Vaquerizo, J.</strong>, Siebenmann, M., Capozzi, A., Mahajan, S., &amp; Helbing, D. (2026). Jenseits der Gemeindeversammlung: Wie Visualisierung die Schweizer Demokratie stärken kann. <em>Sustainable Switzerland</em> (an NZZ initiative; partner content by ETH Zurich), 19 May. <a href="https://sustainableswitzerland.ch/stories/eth/jenseits-der-gemeindeversammlung-wie-visualisierung-die-schweizer-demokratie-staerken-kann-id.4668">https://sustainableswitzerland.ch/stories/eth/jenseits-der-gemeindeversammlung-wie-visualisierung-die-schweizer-demokratie-staerken-kann-id.4668</a> </div>
+</li>
+<li class="pub" id="pub43" data-type="other">
+  <span class="year">2024</span>
+  <div class="cite">Cover artwork for the theme issue “Co-Creating the Future: Participatory Cities and Digital Governance”. <em>Philosophical Transactions of the Royal Society A</em>. </div>
+</li>
+<li class="pub" id="pub44" data-type="other">
+  <span class="year">2022</span>
+  <div class="cite">Delso Gutiérrez, R., &amp; <strong>Argota Sánchez-Vaquerizo, J.</strong> (2022). A city like you and me: Embracing uncertainty in the age of precise data. <em>IaaC Bits</em>, 10 (Learning Cities), 173-186. </div>
+</li>
+<li class="pub" id="pub45" data-type="other">
+  <span class="year">2018</span>
+  <div class="cite"><strong>Argota Sánchez-Vaquerizo, J.</strong> (2018). HyperMobile Commuter City. In Amann, A., Spanish Ministry of Public Works, &amp; Arquia Foundation (Eds.), <em>becoming: Catálogo del Pabellón español, Biennale Architettura 2018</em>, pp. 72-75. Barcelona. ISBN 978-84-09-01748-5. </div>
+</li>
+<li class="pub" id="pub46" data-type="other">
+  <span class="year">2018</span>
+  <div class="cite"><strong>Argota Sánchez-Vaquerizo, J.</strong>, &amp; Delso Gutiérrez, R. (2018). Open Urban Television. In <em>becoming: Catálogo del Pabellón español, Biennale Architettura 2018</em>, p. 57. Barcelona. ISBN 978-84-09-01748-5. </div>
+</li>
+<li class="pub" id="pub47" data-type="other">
+  <span class="year">2018</span>
+  <div class="cite">Angelini Malatesta, B., <strong>Argota Sánchez-Vaquerizo, J.</strong>, Delso Gutiérrez, R., &amp; Cansino Rubio, D. (2018). Concursos: Museo del Palacio El Capricho: Volaverunt. Segundo premio. <em>Revista Arquitectura</em>, 375, 42, 54-55. <a href="https://bit.ly/3gz8Dhk">https://bit.ly/3gz8Dhk</a> </div>
+</li>
+<li class="pub" id="pub48" data-type="other">
+  <span class="year">2017</span>
+  <div class="cite">Delso Gutiérrez, R., &amp; <strong>Argota Sánchez-Vaquerizo, J.</strong> (2017). Watching Puerta del Sol. On Protest Space and its Temporal Conflicts. In Seijdel, J. (Ed.), <em>Open!</em>, Amsterdam. <a href="http://onlineopen.org/watching-puerta-del-sol-on-protest-space-and-its-temporal-conflicts">http://onlineopen.org/watching-puerta-del-sol-on-protest-space-and-its-temporal-conflicts</a> </div>
+</li>
+<li class="pub" id="pub49" data-type="other">
+  <span class="year">2015</span>
+  <div class="cite"><strong>Argota Sánchez-Vaquerizo, J.</strong>, Delso Gutiérrez, R. “Hazlo tú-yo”. Selected cover and back cover designs, competition “Hazlo tú”. <em>Yorokobu</em>, #59, pp. 40-41. <a href="https://bit.ly/2THMZhl">https://bit.ly/2THMZhl</a> </div>
+</li>
+<li class="pub" id="pub50" data-type="other">
+  <span class="year">2012</span>
+  <div class="cite"><strong>Argota Sánchez-Vaquerizo, J.</strong>, Busca Izquierdo, I., Delso Gutiérrez, R., Gómez Martín, B., &amp; de Miguel, M. (2012). C.O.N.T.A.G.I.O. (Contagion). <em>HipoTesis Serie Alfabética</em>, 13, 2. ISSN 1989-8576. <a href="https://dialnet.unirioja.es/servlet/articulo?codigo=4134825">https://dialnet.unirioja.es/servlet/articulo?codigo=4134825</a> </div>
+</li>
+</ol>
+    </div>
+  </div>
+</section>
+
+<!-- TEACHING AND TALKS -->
+<section class="sec" id="teaching">
+  <div class="wrap sec-grid">
+    <h2 class="sec-label">Teaching and talks</h2>
+    <div class="sec-body two-col">
+      <div>
+        <h3>Teaching and supervision</h3>
+        <p>Lecturer at ETH Zurich, with Prof. Dirk Helbing: <em>From Traffic Modeling to Smart Cities and Digital Democracies</em> (fall 2025 and fall 2026). Earlier courses include the Computational Social Science Seminar, a hackathon course on participatory resilience and a MOOC module on traffic simulation (2021-2022).</p>
+        <p>Co-supervisor of the bachelor thesis <em>Simulating Urban Visual Perception with Pluralistic AI Agents</em> (Aristaios Amin, 2026) and of the master thesis behind OGD4All (Michael Siebenmann, 2025).</p>
+      </div>
+      <div>
+        <h3>Recent talks</h3>
+        <ul class="plain">
+          <li><span class="when">Jul 2026</span> Poster, Meta Research Summit for Egocentric Intelligence, Redmond</li>
+          <li><span class="when">Jun 2026</span> Guest lecture, University of Konstanz</li>
+          <li><span class="when">May 2026</span> Digital Landscape Architecture conference, University College Dublin</li>
+          <li><span class="when">Apr 2026</span> Panel, FCL Global and Harvard GSD Urban AI lecture series</li>
+          <li><span class="when">Mar 2026</span> Workshop talk, AlpCHI 2026, Monte Verità, Ascona</li>
+        </ul>
+        <p class="more">Full list of talks, exhibitions and press in the <a href="assets/Argota_CV.pdf">CV</a>.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CV AND CONTACT -->
+<section class="sec" id="cv">
+  <div class="wrap sec-grid">
+    <h2 class="sec-label">CV and contact</h2>
+    <div class="sec-body two-col">
+      <div>
+        <p>Senior Researcher, Professorship of Computational Social Science, Department of Humanities, Social and Political Sciences, ETH Zurich.</p>
+        <p class="actions"><a class="btn btn-primary" href="assets/Argota_CV.pdf">Download CV (PDF)</a></p>
+      </div>
+      <ul class="plain contact">
+        <li><a href="mailto:javier.argota@gess.ethz.ch">javier.argota@gess.ethz.ch</a></li>
+        <li><a href="https://orcid.org/0000-0001-9389-6616">ORCID 0000-0001-9389-6616</a></li>
+        <li><a href="http://scholar.google.com/citations?user=OVTnYkgAAAAJ">Google Scholar</a></li>
+        <li><a href="http://www.linkedin.com/in/javierargota">LinkedIn</a></li>
+        <li><a href="https://coss.ethz.ch">Professorship of Computational Social Science</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap"><p>Javier Argota Sánchez-Vaquerizo, ETH Zurich</p></div>
+</footer>
+
+<div id="tip" role="tooltip" hidden></div>
+<script id="pubdata" type="application/json">{"pub01": {"title": "Treespotting AR (TSAR): Re-Enchanting Minimal Phygital Ecologies", "authors": "Romero Carnicero and Argota Sánchez-Vaquerizo", "venue": "Journal of Digital Landscape Architecture", "year": 2026, "type": "Journal articles", "topic": "Perception", "selected": false}, "pub02": {"title": "Semantic urban elements: A Design+Science paradigm to augment human-centric cities?", "authors": "Quintana et al.", "venue": "Environment and Planning B: Urban Analytics and City Science", "year": 2026, "type": "Journal articles", "topic": "Perception", "selected": false}, "pub03": {"title": "A replica for our democracies?", "authors": "Novelli et al.", "venue": "AI & SOCIETY", "year": 2026, "type": "Journal articles", "topic": "Participatory AI", "selected": false}, "pub04": {"title": "Not your mean green: beyond averages in mapping socio-spatial inequities in urban greenery for smart cities", "authors": "Martinez et al.", "venue": "EPJ Data Science", "year": 2026, "type": "Journal articles", "topic": "Perception", "selected": false}, "pub05": {"title": "Spatial econometrics to estimate the traffic reduction by transforming office space into housing: The case for Barcelona", "authors": "Argota Sánchez-Vaquerizo and Helbing", "venue": "Cities", "year": 2025, "type": "Journal articles", "topic": "Mobility", "selected": false}, "pub06": {"title": "Urban digital twins and metaverses towards city multiplicities: Uniting or dividing urban experiences?", "authors": "Argota Sánchez-Vaquerizo", "venue": "Ethics and Information Technology", "year": 2025, "type": "Journal articles", "topic": "Digital twins", "selected": true}, "pub07": {"title": "FAIRLANE: A multi-agent approach to priority lane management in diverse traffic composition", "authors": "Dubey et al.", "venue": "Transportation Research Part C: Emerging Technologies", "year": 2025, "type": "Journal articles", "topic": "Mobility", "selected": false}, "pub08": {"title": "Global comparison of urban bike-sharing accessibility across 40 cities", "authors": "Mahajan and Argota Sánchez-Vaquerizo", "venue": "Scientific Reports", "year": 2024, "type": "Journal articles", "topic": "Mobility", "selected": true}, "pub09": {"title": "Cooperative adaptable lanes for safer shared space and improved mixed-traffic flow", "authors": "Dubey et al.", "venue": "Transportation Research Part C: Emerging Technologies", "year": 2024, "type": "Journal articles", "topic": "Mobility", "selected": false}, "pub10": {"title": "A virtual reality experiment to study pedestrian perception of future street scenarios", "authors": "Argota Sánchez-Vaquerizo et al.", "venue": "Scientific Reports", "year": 2024, "type": "Journal articles", "topic": "Perception", "selected": true}, "pub11": {"title": "Less can be more: Pruning street networks for sustainable city-making", "authors": "Argota Sánchez-Vaquerizo and Helbing", "venue": "Transportation Research Interdisciplinary Perspectives", "year": 2023, "type": "Journal articles", "topic": "Digital twins", "selected": false}, "pub12": {"title": "Democracy by Design: Perspectives for Digitally Assisted, Participatory Upgrades of Society", "authors": "Helbing et al.", "venue": "Journal of Computational Science", "year": 2023, "type": "Journal articles", "topic": "Participatory AI", "selected": false}, "pub13": {"title": "Participatory resilience: Surviving, recovering and improving together", "authors": "Mahajan et al.", "venue": "Sustainable Cities and Society", "year": 2022, "type": "Journal articles", "topic": "Participatory AI", "selected": true}, "pub14": {"title": "Getting Real: The Challenge of Building and Validating a Large-Scale Digital Twin of Barcelona's Traffic with Empirical Data", "authors": "Argota Sánchez-Vaquerizo", "venue": "ISPRS International Journal of Geo-Information", "year": 2022, "type": "Journal articles", "topic": "Digital twins", "selected": true}, "pub15": {"title": "Autonomy and Automation in the Architectural Project: the Algorithm of the Hypermobile Commuters City", "authors": "Delso Gutiérrez and Argota Sánchez-Vaquerizo", "venue": "Journal of Architectural Education", "year": 2018, "type": "Journal articles", "topic": "Design practice", "selected": false}, "pub16": {"title": "In The Eyes Of: An Offline-First System for Geolocalized Expert Narration in Heritage Interpretation", "authors": "Borunda et al.", "venue": "Proceedings of NGEN-AI 2026", "year": 2026, "type": "Conference papers", "topic": "Perception", "selected": false}, "pub17": {"title": "OGD4All: A framework for accessible interaction with geospatial open government data based on large language models", "authors": "Siebenmann et al.", "venue": "IEEE Conference on Artificial Intelligence (CAI)", "year": 2026, "type": "Conference papers", "topic": "Participatory AI", "selected": false}, "pub18": {"title": "Democratizing urban mobility through an open-source, multi-criteria route recommendation system", "authors": "Eggerth et al.", "venue": "Proceedings of the 18th ACM Conference on Recommender Systems", "year": 2024, "type": "Conference papers", "topic": "Participatory AI", "selected": false}, "pub19": {"title": "Transhistorical urban landscape as hypermap", "authors": "Negueruela del Castillo et al.", "venue": "Proceedings of the 34th ACM Conference on Hypertext and Social Media", "year": 2023, "type": "Conference papers", "topic": "Perception", "selected": false}, "pub20": {"title": "An ecology of conflicts", "authors": "Cardoso Llach and Argota Sánchez-Vaquerizo", "venue": "Computer-Aided Architectural Design. Hello, Culture. CAAD Futures 2019", "year": 2019, "type": "Conference papers", "topic": "Perception", "selected": false}, "pub21": {"title": "The social life of small urban spaces 2.0", "authors": "Argota Sánchez-Vaquerizo and Cardoso Llach", "venue": "Computer-Aided Architectural Design. Hello, Culture. CAAD Futures 2019", "year": 2019, "type": "Conference papers", "topic": "Perception", "selected": false}, "pub22": {"title": "Digital twins: potentials, ethical issues and limitations", "authors": "Helbing and Argota Sánchez-Vaquerizo", "venue": "Handbook on the Politics and Governance of Big Data and Artificial Intelligence", "year": 2023, "type": "Book chapters", "topic": "Digital twins", "selected": true}, "pub23": {"title": "A Tale of Three Cities: On Digital Twins", "authors": "Argota Sánchez-Vaquerizo and Zurera Gómez", "venue": "Future Cities - City Futures: Emerging Urban Perspectives", "year": 2023, "type": "Book chapters", "topic": "Digital twins", "selected": false}, "pub24": {"title": "Hypermobile Commuter City: proyecto basado en datos (a data-driven project)", "authors": "Argota Sánchez-Vaquerizo", "venue": "Parlamentos y Datos. Unidad Espegel, 2015/2016. P3+P4", "year": 2017, "type": "Book chapters", "topic": "Design practice", "selected": false}, "pub25": {"title": "Open Urban Television", "authors": "Argota Sánchez-Vaquerizo et al.", "venue": "Parlamentos y Datos. Unidad Espegel, 2015/2016. P3+P4", "year": 2017, "type": "Book chapters", "topic": "Design practice", "selected": false}, "pub26": {"title": "Computational cities: Parametric urban and architectonic design through the use of algorithms to manage big data", "authors": "Argota Sánchez-Vaquerizo and Delso Gutiérrez", "venue": "Making cities. Visions for an urban future", "year": 2016, "type": "Book chapters", "topic": "Design practice", "selected": false}, "pub27": {"title": "OUT - Open Urban Television", "authors": "Argota Sánchez-Vaquerizo et al.", "venue": "What Urban Media Art Can Do: Why When Where & How", "year": 2016, "type": "Book chapters", "topic": "Design practice", "selected": false}, "pub28": {"title": "I Wish", "authors": "Argota Sánchez-Vaquerizo et al.", "venue": "Eme3_2012 International Architecture Festival Catalogue. Share-it", "year": 2012, "type": "Book chapters", "topic": "Design practice", "selected": false}, "pub29": {"title": "Cúbreme Latina", "authors": "STOY research group", "venue": "Eme3_2012 International Architecture Festival Catalogue. Share-it", "year": 2012, "type": "Book chapters", "topic": "Design practice", "selected": false}, "pub30": {"title": "Programación de Ecosistemas Virtuales como laboratorio de negociación: Protoz00p (Programming virtual ecosystems as a negotiation lab)", "authors": "Del Castillo et al.", "venue": "Colaboratorio ETSAM 2009", "year": 2009, "type": "Book chapters", "topic": "Design practice", "selected": false}, "pub31": {"title": "100X10 Centro de Tecnificación Proyectual", "authors": "Argota Sánchez-Vaquerizo et al.", "venue": "100X10 Centro de Tecnificación Proyectual", "year": 2012, "type": "Books", "topic": "Design practice", "selected": false}, "pub32": {"title": "STOY Jurbaning: Sustainable toy", "authors": "Argota Sánchez-Vaquerizo and Arriero", "venue": "STOY Jurbaning: Sustainable toy", "year": 2011, "type": "Books", "topic": "Design practice", "selected": false}, "pub33": {"title": "Propedeutic experimental workshop", "authors": "Especulacciones group", "venue": "Propedeutic experimental workshop", "year": 2011, "type": "Books", "topic": "Design practice", "selected": false}, "pub34": {"title": "Courses DAI 1 & 2, School of Architecture of Madrid: En acción 1.10 Jugando en la ciudad", "authors": "Argota Sánchez-Vaquerizo", "venue": "En acción 1.10 Jugando en la ciudad", "year": 2010, "type": "Books", "topic": "Design practice", "selected": false}, "pub35": {"title": "Simulating Urban Complexity for City Co-Creation on Three Scales", "authors": "Argota Sánchez-Vaquerizo", "venue": "", "year": 2024, "type": "Theses", "topic": "Digital twins", "selected": false}, "pub36": {"title": "What You See Is What You Get: Data-Informed Workflow in Design for Architecture and Urbanism", "authors": "Argota Sánchez-Vaquerizo", "venue": "", "year": 2018, "type": "Theses", "topic": "Perception", "selected": false}, "pub37": {"title": "Fake Plastic Voters: When Political Parties Can Use AI-Simulated Focus Groups", "authors": "Novelli et al.", "venue": "arXiv", "year": 2026, "type": "Preprints", "topic": "Participatory AI", "selected": false}, "pub38": {"title": "Co-Evolving City Life (CoCi): A System Architecture Proposal for Participatory Smart Cities", "authors": "Helbing et al.", "venue": "", "year": 2026, "type": "Preprints", "topic": "Participatory AI", "selected": false}, "pub39": {"title": "Beyond the Townhall: Spatial Anchoring and LLM Agents for Scalable Participatory Urban Planning", "authors": "Hausladen et al.", "venue": "arXiv", "year": 2026, "type": "Preprints", "topic": "Participatory AI", "selected": false}, "pub40": {"title": "From Particles to Agents: Hallucination as a Metric for Cognitive Friction in Spatial Simulation", "authors": "Argota Sánchez-Vaquerizo and Borunda Monsivais", "venue": "arXiv", "year": 2026, "type": "Preprints", "topic": "Perception", "selected": false}, "pub41": {"title": "Routify.ch: An Open-Source Framework for Pluralistic Urban Routing", "authors": "Mahajan et al.", "venue": "SSRN", "year": 2026, "type": "Preprints", "topic": "Participatory AI", "selected": false}, "pub42": {"title": "Jenseits der Gemeindeversammlung: Wie Visualisierung die Schweizer Demokratie stärken kann", "authors": "Hausladen et al.", "venue": "Sustainable Switzerland", "year": 2026, "type": "Other publications", "topic": "Participatory AI", "selected": false}, "pub43": {"title": "Co-Creating the Future: Participatory Cities and Digital Governance", "authors": "Cover artwork for the theme issue “Co-Creating the Future: Participatory Cities and Digital Governance”. Philosophical Transactions of the Royal Society A.", "venue": "Philosophical Transactions of the Royal Society A", "year": 2024, "type": "Other publications", "topic": "Participatory AI", "selected": false}, "pub44": {"title": "A city like you and me: Embracing uncertainty in the age of precise data", "authors": "Delso Gutiérrez and Argota Sánchez-Vaquerizo", "venue": "IaaC Bits", "year": 2022, "type": "Other publications", "topic": "Digital twins", "selected": false}, "pub45": {"title": "HyperMobile Commuter City", "authors": "Argota Sánchez-Vaquerizo", "venue": "becoming: Catálogo del Pabellón español, Biennale Architettura 2018", "year": 2018, "type": "Other publications", "topic": "Design practice", "selected": false}, "pub46": {"title": "Open Urban Television", "authors": "Argota Sánchez-Vaquerizo and Delso Gutiérrez", "venue": "becoming: Catálogo del Pabellón español, Biennale Architettura 2018", "year": 2018, "type": "Other publications", "topic": "Design practice", "selected": false}, "pub47": {"title": "Concursos: Museo del Palacio El Capricho: Volaverunt", "authors": "Angelini Malatesta et al.", "venue": "Revista Arquitectura", "year": 2018, "type": "Other publications", "topic": "Design practice", "selected": false}, "pub48": {"title": "Watching Puerta del Sol", "authors": "Delso Gutiérrez and Argota Sánchez-Vaquerizo", "venue": "Open!", "year": 2017, "type": "Other publications", "topic": "Design practice", "selected": false}, "pub49": {"title": "Hazlo tú-yo", "authors": "Argota Sánchez-Vaquerizo and Delso Gutiérrez", "venue": "Yorokobu", "year": 2015, "type": "Other publications", "topic": "Design practice", "selected": false}, "pub50": {"title": "C.O.N.T.A.G.I.O", "authors": "Argota Sánchez-Vaquerizo et al.", "venue": "HipoTesis Serie Alfabética", "year": 2012, "type": "Other publications", "topic": "Design practice", "selected": false}}</script>
+<script src="script.js"></script>
 </body>
 </html>
