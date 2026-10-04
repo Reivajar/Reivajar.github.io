@@ -196,3 +196,33 @@ a:hover { text-decoration-thickness: 2px; }
 .shot img, .work-thumb img { transition: filter .25s ease; }
 .shot.mono:hover img, .shot.mono:focus-within img, .work-item:hover .work-thumb img, .work-item:focus-within .work-thumb img { filter: none; }
 @media (hover: none) { .shot.mono img, .work-thumb img { filter: none; } }
+
+/* fill the frame: magnified crop instead of letterboxing */
+.shot.cover img { object-fit: cover; object-position: 50% 50%; }
+
+/* round 3: publication rows with type glyphs, no text label for selected */
+.pub { grid-template-columns: 44px 20px minmax(0, 1fr); gap: 10px; }
+.pub[data-selected="1"] { box-shadow: none; padding-left: 12px; }
+.pub .tag-sel { display: none; }
+.pub .year { padding-top: 2px; }
+.glyph-cell { display: flex; justify-content: center; padding-top: 3px; }
+.glyph { display: block; flex: none; }
+.glyph .shape { fill: var(--ink); stroke: var(--ink); stroke-width: 1; }
+.glyph .shape.ring { fill: var(--bg); stroke-width: 1.8; }
+.glyph.sel .shape { fill: var(--accent); stroke: var(--accent); }
+.glyph.sel .shape.ring { fill: var(--bg); }
+.chip { display: inline-flex; align-items: center; gap: 7px; }
+.chip .glyph { width: 12px; height: 12px; }
+.chip[aria-pressed="true"] .glyph:not(.sel) .shape { fill: var(--bg); stroke: var(--bg); }
+.chip[aria-pressed="true"] .glyph:not(.sel) .shape.ring { fill: var(--ink); stroke: var(--bg); }
+@media (max-width: 860px) { .pub { grid-template-columns: 38px 18px minmax(0, 1fr); gap: 8px; } }
+
+/* round 3: all project images the same size, cut cleanly, no letterbox bands */
+.project .shot img { width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; object-position: 50% 50%; background: transparent; mix-blend-mode: multiply; }
+@media (prefers-color-scheme: dark) { .project .shot img { mix-blend-mode: normal; background: #fff; } }
+.project .shot { margin: 0; }
+
+/* crop focus per project image */
+.project img[src*="routify"] { object-position: 62% 50%; }
+.project img[src*="intheeyesof"] { object-position: 35% 50%; }
+.project img[src*="ogd4all"] { object-position: 50% 40%; }

@@ -2,6 +2,7 @@
  {
   "type": "journal",
   "year": 2026,
+  "month": 6,
   "selected": false,
   "role": "",
   "html": "Romero Carnicero, A., &amp; <strong>Argota Sánchez-Vaquerizo, J.</strong> (2026). Treespotting AR (TSAR): Re-Enchanting Minimal Phygital Ecologies. <em>Journal of Digital Landscape Architecture</em>. <a href=\"https://doi.org/10.14627/537770027\">doi:10.14627/537770027</a>",
@@ -17,6 +18,7 @@
  {
   "type": "journal",
   "year": 2026,
+  "month": 5,
   "selected": false,
   "role": "",
   "html": "Quintana, M., Cai, C., Dubey, R. K., <strong>Argota Sánchez-Vaquerizo, J.</strong>, Gu, Y., Kuriyama, K., Li, S., Hölscher, C., von Richthofen, A., Herthogs, P., Helbing, D., &amp; Biljecki, F. (2026). Semantic urban elements: A Design+Science paradigm to augment human-centric cities? <em>Environment and Planning B: Urban Analytics and City Science</em>. <a href=\"https://doi.org/10.1177/23998083261448244\">doi:10.1177/23998083261448244</a>",
@@ -32,6 +34,7 @@
  {
   "type": "journal",
   "year": 2026,
+  "month": 3,
   "selected": false,
   "role": "",
   "html": "Novelli, C., <strong>Argota Sánchez-Vaquerizo, J.</strong>, Helbing, D., Rotolo, A., &amp; Floridi, L. (2026). A replica for our democracies? On using digital twins to enhance deliberative democracy. <em>AI &amp; SOCIETY</em>, 41(3), 1783-1801. <a href=\"https://doi.org/10.1007/s00146-025-02511-7\">doi:10.1007/s00146-025-02511-7</a>. Extended preprint: <a href=\"https://ssrn.com/abstract=5193012\">https://ssrn.com/abstract=5193012</a>",
@@ -48,6 +51,7 @@
  {
   "type": "journal",
   "year": 2026,
+  "month": 2,
   "selected": false,
   "role": "",
   "html": "Martinez, J., <strong>Argota Sánchez-Vaquerizo, J.</strong>, &amp; Mahajan, S. (2026). Not your mean green: beyond averages in mapping socio-spatial inequities in urban greenery for smart cities. <em>EPJ Data Science</em>, 15(1), 25. <a href=\"https://doi.org/10.1140/epjds/s13688-026-00627-4\">doi:10.1140/epjds/s13688-026-00627-4</a>",
@@ -63,6 +67,7 @@
  {
   "type": "journal",
   "year": 2025,
+  "month": 7,
   "selected": false,
   "role": "",
   "html": "<strong>Argota Sánchez-Vaquerizo, J.</strong> &amp; Helbing, D. (2025). Spatial econometrics to estimate the traffic reduction by transforming office space into housing: The case for Barcelona. <em>Cities</em>, 162, 105901. <a href=\"https://doi.org/10.1016/j.cities.2025.105901\">doi:10.1016/j.cities.2025.105901</a>. Preprint: <a href=\"https://ssrn.com/abstract=4917176\">https://ssrn.com/abstract=4917176</a>",
@@ -79,6 +84,7 @@
  {
   "type": "journal",
   "year": 2025,
+  "month": 3,
   "selected": true,
   "role": "",
   "html": "<strong>Argota Sánchez-Vaquerizo, J.</strong> (2025). Urban digital twins and metaverses towards city multiplicities: Uniting or dividing urban experiences? <em>Ethics and Information Technology</em>, 27(1), 4. <a href=\"https://doi.org/10.1007/s10676-024-09812-3\">doi:10.1007/s10676-024-09812-3</a>",
@@ -94,6 +100,7 @@
  {
   "type": "journal",
   "year": 2025,
+  "month": 2,
   "selected": false,
   "role": "",
   "html": "Dubey, R. K., Dailisan, D., <strong>Argota Sánchez-Vaquerizo, J.</strong>, &amp; Helbing, D. (2025). FAIRLANE: A multi-agent approach to priority lane management in diverse traffic composition. <em>Transportation Research Part C: Emerging Technologies</em>, 171, 104919. <a href=\"https://doi.org/10.1016/j.trc.2024.104919\">doi:10.1016/j.trc.2024.104919</a>",
@@ -109,6 +116,7 @@
  {
   "type": "journal",
   "year": 2024,
+  "month": 9,
   "selected": true,
   "role": "",
   "html": "Mahajan, S., &amp; <strong>Argota Sánchez-Vaquerizo, J.</strong> (2024). Global comparison of urban bike-sharing accessibility across 40 cities. <em>Scientific Reports</em>, 14(1), 20493. <a href=\"https://doi.org/10.1038/s41598-024-70706-x\">doi:10.1038/s41598-024-70706-x</a>. Preprint: <a href=\"https://ssrn.com/abstract=4853905\">https://ssrn.com/abstract=4853905</a>",
@@ -125,6 +133,7 @@
  {
   "type": "journal",
   "year": 2024,
+  "month": 9,
   "selected": false,
   "role": "",
   "html": "Dubey, R. K., <strong>Argota Sánchez-Vaquerizo, J.</strong>, Dailisan, D., &amp; Helbing, D. (2024). Cooperative adaptable lanes for safer shared space and improved mixed-traffic flow. <em>Transportation Research Part C: Emerging Technologies</em>, 166, 104748. <a href=\"https://doi.org/10.1016/j.trc.2024.104748\">doi:10.1016/j.trc.2024.104748</a>",
@@ -140,6 +149,7 @@
  {
   "type": "journal",
   "year": 2024,
+  "month": 2,
   "selected": true,
   "role": "",
   "html": "<strong>Argota Sánchez-Vaquerizo, J.</strong>, Hausladen, C. I., Mahajan, S., Matter, M., Siebenmann, M., van Eggermond, M. A. B., &amp; Helbing, D. (2024). A virtual reality experiment to study pedestrian perception of future street scenarios. <em>Scientific Reports</em>, 14(1), 4571. <a href=\"https://doi.org/10.1038/s41598-024-55073-x\">doi:10.1038/s41598-024-55073-x</a>",
@@ -155,6 +165,7 @@
  {
   "type": "journal",
   "year": 2023,
+  "month": 9,
   "selected": false,
   "role": "",
   "html": "<strong>Argota Sánchez-Vaquerizo, J.</strong> &amp; Helbing, D. (2023). Less can be more: Pruning street networks for sustainable city-making. <em>Transportation Research Interdisciplinary Perspectives</em>, 21, 100878. <a href=\"https://doi.org/10.1016/j.trip.2023.100878\">doi:10.1016/j.trip.2023.100878</a>",
@@ -170,6 +181,7 @@
  {
   "type": "journal",
   "year": 2023,
+  "month": 7,
   "selected": false,
   "role": "",
   "html": "Helbing, D., Mahajan, S., Fricker, R. H., Musso, A., Hausladen, C. I., Carissimo, C., Damasco, C., Pournaras, E., <strong>Argota Sánchez-Vaquerizo, J.</strong>, et al. (2023). Democracy by Design: Perspectives for Digitally Assisted, Participatory Upgrades of Society. <em>Journal of Computational Science</em>, 71, 102061. <a href=\"https://doi.org/10.1016/j.jocs.2023.102061\">doi:10.1016/j.jocs.2023.102061</a>",
@@ -185,6 +197,7 @@
  {
   "type": "journal",
   "year": 2022,
+  "month": 8,
   "selected": true,
   "role": "",
   "html": "Mahajan, S., Hausladen, C. I., <strong>Argota Sánchez-Vaquerizo, J.</strong>, Korecki, M., &amp; Helbing, D. (2022). Participatory resilience: Surviving, recovering and improving together. <em>Sustainable Cities and Society</em>, 83, 103942. <a href=\"https://doi.org/10.1016/j.scs.2022.103942\">doi:10.1016/j.scs.2022.103942</a>",
@@ -200,6 +213,7 @@
  {
   "type": "journal",
   "year": 2022,
+  "month": 1,
   "selected": true,
   "role": "",
   "html": "<strong>Argota Sánchez-Vaquerizo, J.</strong> (2022). Getting Real: The Challenge of Building and Validating a Large-Scale Digital Twin of Barcelona's Traffic with Empirical Data. <em>ISPRS International Journal of Geo-Information</em>, 11(1), 24. <a href=\"https://doi.org/10.3390/ijgi11010024\">doi:10.3390/ijgi11010024</a>",
@@ -215,6 +229,7 @@
  {
   "type": "journal",
   "year": 2018,
+  "month": 1,
   "selected": false,
   "role": "",
   "html": "Delso Gutiérrez, R., &amp; <strong>Argota Sánchez-Vaquerizo, J.</strong> (2018). Autonomy and Automation in the Architectural Project: the Algorithm of the Hypermobile Commuters City. <em>Journal of Architectural Education</em>, 72(1), 120-134. <a href=\"https://doi.org/10.1080/10464883.2018.1410668\">doi:10.1080/10464883.2018.1410668</a>",
@@ -230,6 +245,7 @@
  {
   "type": "conference",
   "year": 2026,
+  "month": 0,
   "selected": false,
   "role": "",
   "html": "Borunda, L., <strong>Argota Sánchez-Vaquerizo, J.</strong>, Wissman, M., Lamoureux, K., Zhu, M., Marchiori, E., Gavazzi, A., &amp; Cantoni, L. (2026). In The Eyes Of: An Offline-First System for Geolocalized Expert Narration in Heritage Interpretation. In <em>Proceedings of NGEN-AI 2026</em>, Trento (Italy). Springer (forthcoming).",
@@ -243,6 +259,7 @@
  {
   "type": "conference",
   "year": 2026,
+  "month": 5,
   "selected": false,
   "role": "",
   "html": "Siebenmann, M., <strong>Argota Sánchez-Vaquerizo, J.</strong>, Arisona, S., Samp, K., Gisler, L., &amp; Helbing, D. (2026). OGD4All: A framework for accessible interaction with geospatial open government data based on large language models. In <em>2026 IEEE Conference on Artificial Intelligence (CAI)</em>, Granada (Spain), pp. 882-888. <a href=\"https://doi.org/10.1109/CAI68641.2026.11536530\">doi:10.1109/CAI68641.2026.11536530</a>. Preprint: <a href=\"https://arxiv.org/abs/2602.00012\">https://arxiv.org/abs/2602.00012</a>",
@@ -259,6 +276,7 @@
  {
   "type": "conference",
   "year": 2024,
+  "month": 10,
   "selected": false,
   "role": "",
   "html": "Eggerth, A., <strong>Argota Sánchez-Vaquerizo, J.</strong>, Helbing, D., &amp; Mahajan, S. (2024). Democratizing urban mobility through an open-source, multi-criteria route recommendation system. In <em>Proceedings of the 18th ACM Conference on Recommender Systems</em>, pp. 1073-1078. <a href=\"https://doi.org/10.1145/3640457.3691702\">doi:10.1145/3640457.3691702</a>",
@@ -274,6 +292,7 @@
  {
   "type": "conference",
   "year": 2023,
+  "month": 9,
   "selected": false,
   "role": "",
   "html": "Negueruela del Castillo, D., Neri, I., Guhennec, P., <strong>Argota Sánchez-Vaquerizo, J.</strong>, Schaerf, L., Bernasconi, V., &amp; Ballesteros Zapata, P. (2023). Transhistorical urban landscape as hypermap. In <em>Proceedings of the 34th ACM Conference on Hypertext and Social Media</em>, pp. 1-5. ACM. <a href=\"https://doi.org/10.1145/3603163.3609083\">doi:10.1145/3603163.3609083</a>",
@@ -289,6 +308,7 @@
  {
   "type": "conference",
   "year": 2019,
+  "month": 7,
   "selected": false,
   "role": "",
   "html": "Cardoso Llach, D., &amp; <strong>Argota Sánchez-Vaquerizo, J.</strong> (2019). An ecology of conflicts. In Lee, J. H. (Ed.), <em>Computer-Aided Architectural Design. Hello, Culture. CAAD Futures 2019</em>, CCIS Vol. 1028. Springer, Singapore. <a href=\"https://doi.org/10.1007/978-981-13-8410-3_15\">doi:10.1007/978-981-13-8410-3_15</a>",
@@ -304,6 +324,7 @@
  {
   "type": "conference",
   "year": 2019,
+  "month": 7,
   "selected": false,
   "role": "",
   "html": "<strong>Argota Sánchez-Vaquerizo, J.</strong>, &amp; Cardoso Llach, D. (2019). The social life of small urban spaces 2.0. In Lee, J. H. (Ed.), <em>Computer-Aided Architectural Design. Hello, Culture. CAAD Futures 2019</em>, CCIS Vol. 1028. Springer, Singapore. <a href=\"https://doi.org/10.1007/978-981-13-8410-3_21\">doi:10.1007/978-981-13-8410-3_21</a>",
@@ -319,6 +340,7 @@
  {
   "type": "chapter",
   "year": 2023,
+  "month": 6,
   "selected": true,
   "role": "",
   "html": "Helbing, D., &amp; <strong>Argota Sánchez-Vaquerizo, J.</strong> (2023). Digital twins: potentials, ethical issues and limitations. In <em>Handbook on the Politics and Governance of Big Data and Artificial Intelligence</em>, pp. 64-104. Edward Elgar Publishing. <a href=\"https://doi.org/10.4337/9781800887374.00013\">doi:10.4337/9781800887374.00013</a>. Preprint: <a href=\"https://ssrn.com/abstract=4167963\">https://ssrn.com/abstract=4167963</a>",
@@ -335,6 +357,7 @@
  {
   "type": "chapter",
   "year": 2023,
+  "month": 4,
   "selected": false,
   "role": "",
   "html": "<strong>Argota Sánchez-Vaquerizo, J.</strong>, &amp; Zurera Gómez, A. (2023). A Tale of Three Cities: On Digital Twins. In Veddeler, C., Kuijper, J., Gath-Morad, M., &amp; van der Wal, I. (Eds.), <em>Future Cities - City Futures: Emerging Urban Perspectives</em>, pp. 294-307. Delft: TU Delft OPEN.",
@@ -348,6 +371,7 @@
  {
   "type": "chapter",
   "year": 2017,
+  "month": 1,
   "selected": false,
   "role": "",
   "html": "<strong>Argota Sánchez-Vaquerizo, J.</strong> (2017). Hypermobile Commuter City: proyecto basado en datos (a data-driven project). In Espegel Alonso, C., Cánovas Alcaraz, A., &amp; Blanco Herrero, A. (Eds.), <em>Parlamentos y Datos. Unidad Espegel, 2015/2016. P3+P4</em>, pp. 108-118. Madrid: Mairea Libros. ISBN 978-84-946306-1-3.",
@@ -361,6 +385,7 @@
  {
   "type": "chapter",
   "year": 2017,
+  "month": 1,
   "selected": false,
   "role": "",
   "html": "<strong>Argota Sánchez-Vaquerizo, J.</strong>, Delso Gutiérrez, R., &amp; Gómez Saiz, A. (2017). Open Urban Television. In Espegel Alonso, C., Cánovas Alcaraz, A., &amp; Blanco Herrero, A. (Eds.), <em>Parlamentos y Datos. Unidad Espegel, 2015/2016. P3+P4</em>, pp. 32-41. Madrid: Mairea Libros. ISBN 978-84-946306-1-3.",
@@ -374,6 +399,7 @@
  {
   "type": "chapter",
   "year": 2016,
+  "month": 10,
   "selected": false,
   "role": "",
   "html": "<strong>Argota Sánchez-Vaquerizo, J.</strong>, &amp; Delso Gutiérrez, R. (2016). Computational cities: Parametric urban and architectonic design through the use of algorithms to manage big data. In Boni, A. L., et al. (Eds.), <em>Making cities. Visions for an urban future</em>, p. 118 and Annex 1-26. Brussels: Eurocities.",
@@ -387,6 +413,7 @@
  {
   "type": "chapter",
   "year": 2016,
+  "month": 5,
   "selected": false,
   "role": "",
   "html": "<strong>Argota Sánchez-Vaquerizo, J.</strong>, Delso Gutiérrez, R., &amp; Gómez Saiz, A. (2016). OUT - Open Urban Television. In Pop, S., Toft, T., &amp; Calvillo, N., <em>What Urban Media Art Can Do: Why When Where &amp; How</em>, pp. 112-115. Stuttgart: Avedition. ISBN 978-3899862553.",
@@ -400,6 +427,7 @@
  {
   "type": "chapter",
   "year": 2012,
+  "month": 6,
   "selected": false,
   "role": "",
   "html": "<strong>Argota Sánchez-Vaquerizo, J.</strong>, Busca Izquierdo, I., Delso Gutiérrez, R., Gómez Martín, B., &amp; de Miguel, M. (100x10), and Especulacciones course group (2012). I Wish. In <em>Eme3_2012 International Architecture Festival Catalogue. Share-it</em>, Barcelona, pp. 46-49. <a href=\"https://issuu.com/eme3/docs/eme3_2012_catalogo\">https://issuu.com/eme3/docs/eme3_2012_catalogo</a>.",
@@ -415,6 +443,7 @@
  {
   "type": "chapter",
   "year": 2012,
+  "month": 6,
   "selected": false,
   "role": "",
   "html": "STOY research group, Especulacciones course group, and DAI course group (2012). Cúbreme Latina. In <em>Eme3_2012 International Architecture Festival Catalogue. Share-it</em>, Barcelona, pp. 232-235. <a href=\"https://issuu.com/eme3/docs/eme3_2012_catalogo\">https://issuu.com/eme3/docs/eme3_2012_catalogo</a>.",
@@ -430,6 +459,7 @@
  {
   "type": "chapter",
   "year": 2009,
+  "month": 9,
   "selected": false,
   "role": "",
   "html": "Del Castillo, S., Castiñeira, E., &amp; <strong>Argota Sánchez-Vaquerizo, J.</strong> (2009). Programación de Ecosistemas Virtuales como laboratorio de negociación: Protoz00p (Programming virtual ecosystems as a negotiation lab). In Ribot, A., Borrego, I., García-Germán, J., &amp; García-Setién, J. (Eds.), <em>Colaboratorio ETSAM 2009</em>. Madrid: Mairea. ISBN 978-84-92641-37-6.",
@@ -443,6 +473,7 @@
  {
   "type": "book",
   "year": 2012,
+  "month": 6,
   "selected": false,
   "role": "",
   "html": "<strong>Argota Sánchez-Vaquerizo, J.</strong>, Busca Izquierdo, I., Delso Gutiérrez, R., Gómez Martín, B., &amp; de Miguel, M. (2012). <em>100X10 Centro de Tecnificación Proyectual</em>. Madrid: Mairea. ISBN 978-84-940020-7-6.",
@@ -456,6 +487,7 @@
  {
   "type": "book",
   "year": 2011,
+  "month": 10,
   "selected": false,
   "role": "",
   "html": "<strong>Argota Sánchez-Vaquerizo, J.</strong> &amp; Arriero, A. (Eds.) (2011). <em>STOY Jurbaning: Sustainable toy</em>. Madrid: Mairea. Research group Hypermedia. ISBN 978-84-615-4104-1.",
@@ -469,6 +501,7 @@
  {
   "type": "book",
   "year": 2011,
+  "month": 6,
   "selected": false,
   "role": "",
   "html": "Especulacciones group (2011). <em>Propedeutic experimental workshop</em>. ETSAM 2010-2011. Madrid: Mairea.",
@@ -482,6 +515,7 @@
  {
   "type": "book",
   "year": 2010,
+  "month": 6,
   "selected": false,
   "role": "",
   "html": "<strong>Argota Sánchez-Vaquerizo, J.</strong> (Ed.) (2010). Courses DAI 1 &amp; 2, School of Architecture of Madrid: <em>En acción 1.10 Jugando en la ciudad</em>. Madrid: Mairea. ISBN 978-84-92641-35-2.",
@@ -495,6 +529,7 @@
  {
   "type": "thesis",
   "year": 2024,
+  "month": 10,
   "selected": false,
   "role": "",
   "html": "<strong>Argota Sánchez-Vaquerizo, J.</strong> (2024). Simulating Urban Complexity for City Co-Creation on Three Scales. Doctoral dissertation, ETH Zurich. <a href=\"https://doi.org/10.3929/ethz-b-000699615\">doi:10.3929/ethz-b-000699615</a>",
@@ -510,6 +545,7 @@
  {
   "type": "thesis",
   "year": 2018,
+  "month": 5,
   "selected": false,
   "role": "",
   "html": "<strong>Argota Sánchez-Vaquerizo, J.</strong> (2018). What You See Is What You Get: Data-Informed Workflow in Design for Architecture and Urbanism. M.Sc. in Computational Design dissertation, Carnegie Mellon University. <a href=\"https://doi.org/10.1184/R1/7063361.V1\">doi:10.1184/R1/7063361.V1</a>",
@@ -525,6 +561,7 @@
  {
   "type": "preprint",
   "year": 2026,
+  "month": 6,
   "selected": false,
   "role": "",
   "html": "Novelli, C., <strong>Argota Sánchez-Vaquerizo, J.</strong>, Cyr, J., Formisano, G., McDougall, S., Sandri, G., &amp; Floridi, L. (2026). Fake Plastic Voters: When Political Parties Can Use AI-Simulated Focus Groups. <a href=\"https://arxiv.org/abs/2606.00043\">arXiv:2606.00043</a>",
@@ -540,6 +577,7 @@
  {
   "type": "preprint",
   "year": 2026,
+  "month": 6,
   "selected": false,
   "role": "",
   "html": "Helbing, D., Hausladen, C. I., Mahajan, S., Asikis, T., Korecki, M., &amp; <strong>Argota Sánchez-Vaquerizo, J.</strong> (2026). Co-Evolving City Life (CoCi): A System Architecture Proposal for Participatory Smart Cities. ResearchGate. <a href=\"https://www.researchgate.net/publication/405867285\">researchgate.net/publication/405867285</a>",
@@ -553,6 +591,7 @@
  {
   "type": "preprint",
   "year": 2026,
+  "month": 4,
   "selected": false,
   "role": "",
   "html": "Hausladen, C. I., <strong>Argota Sánchez-Vaquerizo, J.</strong>, Siebenmann, M., Capozzi, A., Mahajan, S., &amp; Helbing, D. (2026). Beyond the Townhall: Spatial Anchoring and LLM Agents for Scalable Participatory Urban Planning. <a href=\"https://arxiv.org/abs/2604.16348\">arXiv:2604.16348</a>",
@@ -568,6 +607,7 @@
  {
   "type": "preprint",
   "year": 2026,
+  "month": 1,
   "selected": false,
   "role": "",
   "html": "<strong>Argota Sánchez-Vaquerizo, J.</strong> &amp; Borunda Monsivais, L. (2026). From Particles to Agents: Hallucination as a Metric for Cognitive Friction in Spatial Simulation. <a href=\"https://arxiv.org/abs/2601.21977\">arXiv:2601.21977</a>",
@@ -583,6 +623,7 @@
  {
   "type": "preprint",
   "year": 2026,
+  "month": 1,
   "selected": false,
   "role": "",
   "html": "Mahajan, S., <strong>Argota Sánchez-Vaquerizo, J.</strong>, Eggerth, A., Schweighofer, C., &amp; Helbing, D. (2026). Routify.ch: An Open-Source Framework for Pluralistic Urban Routing. <em>SSRN</em>. <a href=\"https://ssrn.com/abstract=6074547\">https://ssrn.com/abstract=6074547</a>",
@@ -598,6 +639,7 @@
  {
   "type": "other",
   "year": 2026,
+  "month": 5,
   "selected": false,
   "role": "",
   "html": "Hausladen, C. I., <strong>Argota Sánchez-Vaquerizo, J.</strong>, Siebenmann, M., Capozzi, A., Mahajan, S., &amp; Helbing, D. (2026). Jenseits der Gemeindeversammlung: Wie Visualisierung die Schweizer Demokratie stärken kann. <em>Sustainable Switzerland</em> (an NZZ initiative; partner content by ETH Zurich), 19 May. <a href=\"https://sustainableswitzerland.ch/stories/eth/jenseits-der-gemeindeversammlung-wie-visualisierung-die-schweizer-demokratie-staerken-kann-id.4668\">https://sustainableswitzerland.ch/stories/eth/jenseits-der-gemeindeversammlung-wie-visualisierung-die-schweizer-demokratie-staerken-kann-id.4668</a>",
@@ -613,6 +655,7 @@
  {
   "type": "other",
   "year": 2024,
+  "month": 11,
   "selected": false,
   "role": "",
   "html": "Cover artwork for the theme issue “Co-Creating the Future: Participatory Cities and Digital Governance”. <em>Philosophical Transactions of the Royal Society A</em>.",
@@ -626,6 +669,7 @@
  {
   "type": "other",
   "year": 2022,
+  "month": 11,
   "selected": false,
   "role": "",
   "html": "Delso Gutiérrez, R., &amp; <strong>Argota Sánchez-Vaquerizo, J.</strong> (2022). A city like you and me: Embracing uncertainty in the age of precise data. <em>IaaC Bits</em>, 10 (Learning Cities), 173-186.",
@@ -639,6 +683,7 @@
  {
   "type": "other",
   "year": 2018,
+  "month": 5,
   "selected": false,
   "role": "",
   "html": "<strong>Argota Sánchez-Vaquerizo, J.</strong> (2018). HyperMobile Commuter City. In Amann, A., Spanish Ministry of Public Works, &amp; Arquia Foundation (Eds.), <em>becoming: Catálogo del Pabellón español, Biennale Architettura 2018</em>, pp. 72-75. Barcelona. ISBN 978-84-09-01748-5.",
@@ -652,6 +697,7 @@
  {
   "type": "other",
   "year": 2018,
+  "month": 5,
   "selected": false,
   "role": "",
   "html": "<strong>Argota Sánchez-Vaquerizo, J.</strong>, &amp; Delso Gutiérrez, R. (2018). Open Urban Television. In <em>becoming: Catálogo del Pabellón español, Biennale Architettura 2018</em>, p. 57. Barcelona. ISBN 978-84-09-01748-5.",
@@ -665,6 +711,7 @@
  {
   "type": "other",
   "year": 2018,
+  "month": 4,
   "selected": false,
   "role": "",
   "html": "Angelini Malatesta, B., <strong>Argota Sánchez-Vaquerizo, J.</strong>, Delso Gutiérrez, R., &amp; Cansino Rubio, D. (2018). Concursos: Museo del Palacio El Capricho: Volaverunt. Segundo premio. <em>Revista Arquitectura</em>, 375, 42, 54-55. <a href=\"https://bit.ly/3gz8Dhk\">https://bit.ly/3gz8Dhk</a>",
@@ -680,6 +727,7 @@
  {
   "type": "other",
   "year": 2017,
+  "month": 6,
   "selected": false,
   "role": "",
   "html": "Delso Gutiérrez, R., &amp; <strong>Argota Sánchez-Vaquerizo, J.</strong> (2017). Watching Puerta del Sol. On Protest Space and its Temporal Conflicts. In Seijdel, J. (Ed.), <em>Open!</em>, Amsterdam. <a href=\"http://onlineopen.org/watching-puerta-del-sol-on-protest-space-and-its-temporal-conflicts\">http://onlineopen.org/watching-puerta-del-sol-on-protest-space-and-its-temporal-conflicts</a>",
@@ -695,6 +743,7 @@
  {
   "type": "other",
   "year": 2015,
+  "month": 2,
   "selected": false,
   "role": "",
   "html": "<strong>Argota Sánchez-Vaquerizo, J.</strong>, Delso Gutiérrez, R. “Hazlo tú-yo”. Selected cover and back cover designs, competition “Hazlo tú”. <em>Yorokobu</em>, #59, pp. 40-41. <a href=\"https://bit.ly/2THMZhl\">https://bit.ly/2THMZhl</a>",
@@ -710,6 +759,7 @@
  {
   "type": "other",
   "year": 2012,
+  "month": 4,
   "selected": false,
   "role": "",
   "html": "<strong>Argota Sánchez-Vaquerizo, J.</strong>, Busca Izquierdo, I., Delso Gutiérrez, R., Gómez Martín, B., &amp; de Miguel, M. (2012). C.O.N.T.A.G.I.O. (Contagion). <em>HipoTesis Serie Alfabética</em>, 13, 2. ISSN 1989-8576. <a href=\"https://dialnet.unirioja.es/servlet/articulo?codigo=4134825\">https://dialnet.unirioja.es/servlet/articulo?codigo=4134825</a>",
